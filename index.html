@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de URLs Parametrizadas - Rigolim</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    .app {
+      max-width: 650px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    button {
+      background: #5d2f03;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    button:hover {
+      background: #7a4310;
+    }
+
+    .result {
+      margin-top: 20px;
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .result input {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .history {
+      margin-top: 30px;
+    }
+
+    .history h2 {
+      margin-bottom: 10px;
+    }
+
+    .history ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .history-item {
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .history-item strong {
+      font-size: 12px;
+      color: #444;
+    }
+
+    .history-meta {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .history-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .copy-btn {
+      background: #5d2f03;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .copy-btn:hover {
+      background: #7a4310;
+    }
+
+    #clearBtn {
+      background: #bbb;
+      color: #333;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    #clearBtn:hover {
+      background: #999;
+    }
+
+    #copyFeedback, #clearFeedback {
+      color: green;
+      font-size: 13px;
+      margin-top: 5px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>🔗 Gerador de URLs Parametrizadas</h1>
+
+    <label>Campanha</label>
+    <select id="campaignSelect"></select>
+
+    <label>Marca</label>
+    <select id="brandSelect"></select>
+
+    <label>Canal</label>
+    <select id="channelSelect"></select>
+
+    <label>Subtipo (quando existir)</label>
+    <select id="subtypeSelect"></select>
+
+    <label>URL Base</label>
+    <input id="baseUrl" type="text" placeholder="https://www.rigolim.com.br" />
+
+    <button id="generateBtn">Gerar URL</button>
+
+    <div id="resultBox" class="result hidden">
+      <p>✅ Link gerado:</p>
+      <input id="finalUrl" readonly />
+      <button id="copyBtn">Copiar</button>
+      <p id="copyFeedback">Link copiado!</p>
+    </div>
+
+    <div class="history">
+      <h2>Histórico recente</h2>
+      <ul id="historyList"></ul>
+      <button id="clearBtn">🗑️ Limpar histórico</button>
+      <p id="clearFeedback">Histórico limpo com sucesso!</p>
+    </div>
+  </div>
+
+  <script>
+    let configData = {};
+
+    const campaignSelect = document.getElementById('campaignSelect');
+    const brandSelect = document.getElementById('brandSelect');
+    const channelSelect = document.getElementById('channelSelect');
+    const subtypeSelect = document.getElementById('subtypeSelect');
+    const baseUrlInput = document.getElementById('baseUrl');
+    const generateBtn = document.getElementById('generateBtn');
+    const resultBox = document.getElementById('resultBox');
+    const finalUrlInput = document.getElementById('finalUrl');
+    const copyBtn = document.getElementById('copyBtn');
+    const copyFeedback = document.getElementById('copyFeedback');
+    const clearBtn = document.getElementById('clearBtn');
+    const clearFeedback = document.getElementById('clearFeedback');
+    const historyList = document.getElementById('historyList');
+
+    // Carrega o JSON
+    fetch('config.json')
+      .then(response => response.json())
+      .then(data => {
+        configData = data;
+        populateCampaigns();
+      })
+      .catch(err => {
+        alert('Erro ao carregar config.json. Verifique se o arquivo está na mesma pasta.');
+        console.error(err);
+      });
+
+    function populateCampaigns() {
+      campaignSelect.innerHTML = "";
+      Object.keys(configData).forEach(campaign => {
+        const opt = document.createElement("option");
+        opt.value = campaign;
+        opt.textContent = campaign.replace("-", " ").toUpperCase();
+        campaignSelect.appendChild(opt);
+      });
+      populateBrands();
+    }
+
+    function populateBrands() {
+      const campaign = campaignSelect.value;
+      const brands = Object.keys(configData[campaign]);
+      brandSelect.innerHTML = "";
+      brands.forEach(brand => {
+        const opt = document.createElement("option");
+        opt.value = brand;
+        opt.textContent = brand.toUpperCase();
+        brandSelect.appendChild(opt);
+      });
+      populateChannels();
+    }
+
+    function populateChannels() {
+      const campaign = campaignSelect.value;
+      const brand = brandSelect.value;
+      const channels = Object.keys(configData[campaign][brand]);
+      channelSelect.innerHTML = "";
+      channels.forEach(channel => {
+        const opt = document.createElement("option");
+        opt.value = channel;
+        opt.textContent = channel.toUpperCase();
+        channelSelect.appendChild(opt);
+      });
+      populateSubtypes();
+    }
+
+    function populateSubtypes() {
+      const campaign = campaignSelect.value;
+      const brand = brandSelect.value;
+      const channel = channelSelect.value;
+      const subtypes = Object.keys(configData[campaign][brand][channel].params);
+      subtypeSelect.innerHTML = "";
+      subtypes.forEach(st => {
+        const opt = document.createElement("option");
+        opt.value = st;
+        opt.textContent = st.replace("_", " ").toUpperCase();
+        subtypeSelect.appendChild(opt);
+      });
+    }
+
+    function generateUrl() {
+      let base = baseUrlInput.value.trim();
+      if (!base) return alert("Insira uma URL base!");
+      if (!base.startsWith("http")) base = "https://" + base;
+
+      const campaign = campaignSelect.value;
+      const brand = brandSelect.value;
+      const channel = channelSelect.value;
+      const subtype = subtypeSelect.value;
+      const id = configData[campaign][brand][channel].id;
+      const params = configData[campaign][brand][channel].params[subtype];
+      const finalUrl = `${base}?parceiro=${id}${params}`;
+      const timestamp = new Date().toLocaleString("pt-BR");
+
+      finalUrlInput.value = finalUrl;
+      resultBox.classList.remove("hidden");
+
+      const record = { campaign, brand, channel, subtype, url: finalUrl, timestamp };
+      saveHistory(record);
+      renderHistory();
+    }
+
+    function saveHistory(record) {
+      const history = JSON.parse(localStorage.getItem("history") || "[]");
+      history.unshift(record);
+      if (history.length > 15) history.pop();
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    function renderHistory() {
+      const history = JSON.parse(localStorage.getItem("history") || "[]");
+      historyList.innerHTML = "";
+
+      if (history.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "Nenhum link gerado ainda.";
+        li.style.color = "#777";
+        historyList.appendChild(li);
+        return;
+      }
+
+      history.forEach(item => {
+        const li = document.createElement("li");
+        li.classList.add("history-item");
+
+        li.innerHTML = `
+          <strong>${item.campaign.toUpperCase()} | ${item.brand.toUpperCase()} | ${item.channel.toUpperCase()} | ${item.subtype.toUpperCase()}</strong>
+          <div class="history-meta">🕒 ${item.timestamp}</div>
+          <div class="history-link">${item.url}</div>
+          <div class="history-actions">
+            <button class="copy-btn" onclick="copyToClipboard('${item.url}')">Copiar</button>
+          </div>
+        `;
+        historyList.appendChild(li);
+      });
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          copyFeedback.style.display = "block";
+          setTimeout(() => copyFeedback.style.display = "none", 2000);
+        })
+        .catch(() => {
+          const temp = document.createElement("input");
+          temp.value = text;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand("copy");
+          document.body.removeChild(temp);
+        });
+    }
+
+    function clearHistory() {
+      if (!confirm("Tem certeza que deseja apagar todo o histórico?")) return;
+      localStorage.removeItem("history");
+      renderHistory();
+      clearFeedback.style.display = "block";
+      setTimeout(() => (clearFeedback.style.display = "none"), 2000);
+    }
+
+    campaignSelect.addEventListener("change", populateBrands);
+    brandSelect.addEventListener("change", populateChannels);
+    channelSelect.addEventListener("change", populateSubtypes);
+    generateBtn.addEventListener("click", generateUrl);
+    clearBtn.addEventListener("click", clearHistory);
+
+    renderHistory();
+  </script>
+</body>
+</html>
