@@ -31,6 +31,18 @@
       margin: 5px 0;
     }
     button:hover { background: #7a4310; }
+    a-button {
+      background: #5d2f03;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 5px 0;
+      text-decoration: none;
+      font-size: 13px; 
+    }
+    a-button:hover { background: #7a4310; }
     input {
       padding: 8px;
       border: 1px solid #ccc;
@@ -108,7 +120,7 @@
       <button id="copyBtn" onclick="copyJson()" disabled>📋 Copiar JSON</button>
       <button id="downloadBtn" onclick="downloadJson()" disabled>💾 Baixar JSON</button>
       <button onclick="clearAll()">🗑️ Limpar Tudo</button>
-      <button href="https://rigolimhairandco.github.io/gerador-de-url/">🔗 Gerador de URLs Parametrizadas</button>
+      <a class="a-buttton" href="https://rigolimhairandco.github.io/gerador-de-url/">🔗 Gerador de URLs Parametrizadas</a>
     </div>
 
     <div id="status"></div>
