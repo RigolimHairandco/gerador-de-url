@@ -131,15 +131,25 @@
       background: #7a4310;
     }
 
+    .copy-btn-history {
+      background: #444;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
     #clearBtn {
-      background: #bbb;
-      color: #333;
+      background: #ff0000;
+      color: #fff;
       font-weight: 600;
       margin-top: 10px;
     }
 
     #clearBtn:hover {
-      background: #999;
+      background: #9c0909;
     }
 
     #copyFeedback, #clearFeedback {
@@ -317,7 +327,7 @@
           <div class="history-meta">🕒 ${item.timestamp}</div>
           <div class="history-link">${item.url}</div>
           <div class="history-actions">
-            <button class="copy-btn" onclick="copyToClipboard('${item.url}', copyFeedback)">Copiar</button>
+            <button class="copy-btn-history" onclick="copyToClipboard('${item.url}', copyFeedback)">Copiar</button>
           </div>
         `;
         historyList.appendChild(li);
