@@ -1,75 +1,107 @@
 {
-  "black-friday": {
-    "rigolim": {
-      "instagram": {
-        "id": 7502,
-        "params": {
-          "link_bio": "&nemu_source=link_bio_ig_rhc&nemu_adset=organico",
-          "stories": "&nemu_source=link_stories_ig_rhc&nemu_adset=organico",
-          "canal": "&nemu_source=link_canal_ig_rhc&nemu_adset=organico",
-          "direct": "&nemu_source=link_dm_ig_rhc&nemu_adset=organico"
-        }
-      },
-      "facebook": { "id": 7504, "params": { "default": "&nemu_source=facebook&nemu_adset=organico" } },
-      "tiktok": { "id": 7506, "params": { "default": "&nemu_source=tiktok&nemu_adset=organico" } },
-      "pinterest": { "id": 7508, "params": { "default": "&nemu_source=pinterest&nemu_adset=organico" } },
-      "youtube": { "id": 7510, "params": { "default": "&nemu_source=youtube&nemu_adset=organico" } },
-      "linkedin": { "id": 7512, "params": { "default": "&nemu_source=linkedin&nemu_adset=organico" } },
-      "grupo-vip": { "id": 7526, "params": { "default": "&nemu_source=grupo-vip-rigolover&nemu_adset=organico" } },
-      "embaixadores": { "id": 7530, "params": { "default": "&nemu_source=embaixadores&nemu_adset=organico" } },
-      "experts": { "id": 7532, "params": { "default": "&nemu_source=experts&nemu_adset=organico" } }
-    },
-    "leticia": {
-      "instagram": {
-        "id": 7514,
-        "params": {
-          "link_bio": "&nemu_source=link_bio_ig_lr&nemu_adset=organico",
-          "stories": "&nemu_source=link_stories_ig_lr&nemu_adset=organico",
-          "canal": "&nemu_source=link_canal_ig_lr&nemu_adset=organico",
-          "direct": "&nemu_source=link_dm_ig_lr&nemu_adset=organico"
-        }
-      },
-      "facebook": { "id": 7516, "params": { "default": "&nemu_source=facebook&nemu_adset=organico" } },
-      "tiktok": { "id": 7518, "params": { "default": "&nemu_source=tiktok&nemu_adset=organico" } },
-      "pinterest": { "id": 7520, "params": { "default": "&nemu_source=pinterest&nemu_adset=organico" } },
-      "youtube": { "id": 7522, "params": { "default": "&nemu_source=youtube&nemu_adset=organico" } },
-      "linkedin": { "id": 7524, "params": { "default": "&nemu_source=linkedin&nemu_adset=organico" } },
-      "grupo-vip": { "id": 7528, "params": { "default": "&nemu_source=grupo-vip-leticia&nemu_adset=organico" } }
-    }
-  },
-
   "rotina": {
     "rigolim": {
       "instagram": {
         "id": 7120,
         "params": {
-          "link_bio": "&nemu_source=link_bio_ig_rhc&nemu_adset=organico",
-          "stories": "&nemu_source=link_stories_ig_rhc&nemu_adset=organico",
-          "canal": "&nemu_source=link_canal_ig_rhc&nemu_adset=organico",
-          "direct": "&nemu_source=link_dm_ig_rhc&nemu_adset=organico"
+          "link_bio": "&nemu_source=link_bio_instagram_rhc&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_rhc&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_rhc&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_rhc&nemu_adset=organico"
         }
       },
-      "facebook": { "id": 7460, "params": { "default": "&nemu_source=facebook&nemu_adset=organico" } },
-      "tiktok": { "id": 7462, "params": { "default": "&nemu_source=tiktok&nemu_adset=organico" } },
-      "pinterest": { "id": 7464, "params": { "default": "&nemu_source=pinterest&nemu_adset=organico" } },
-      "youtube": { "id": 7466, "params": { "default": "&nemu_source=youtube&nemu_adset=organico" } },
-      "linkedin": { "id": 7468, "params": { "default": "&nemu_source=linkedin&nemu_adset=organico" } }
+      "facebook": { "id": 7460, "params": { "default": "&nemu_source=facebook_rhc&nemu_adset=organico" } },
+      "tiktok": { "id": 7462, "params": { "default": "&nemu_source=tiktok_rhc&nemu_adset=organico" } },
+      "pinterest": { "id": 7464, "params": { "default": "&nemu_source=pinterest_rhc&nemu_adset=organico" } },
+      "youtube": { "id": 7466, "params": { "default": "&nemu_source=youtube_rhc&nemu_adset=organico" } },
+      "linkedin": { "id": 7468, "params": { "default": "&nemu_source=linkedin_rhc&nemu_adset=organico" } }
     },
     "leticia": {
       "instagram": {
         "id": 7002,
         "params": {
-          "link_bio": "&nemu_source=link_bio_ig_lr&nemu_adset=organico",
-          "stories": "&nemu_source=link_stories_ig_lr&nemu_adset=organico",
-          "canal": "&nemu_source=link_canal_ig_lr&nemu_adset=organico",
-          "direct": "&nemu_source=link_dm_ig_lr&nemu_adset=organico"
+          "link_bio": "&nemu_source=link_bio_instagram_lr&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_lr&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_lr&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_lr&nemu_adset=organico"
         }
       },
-      "facebook": { "id": 7450, "params": { "default": "&nemu_source=facebook&nemu_adset=organico" } },
-      "tiktok": { "id": 7452, "params": { "default": "&nemu_source=tiktok&nemu_adset=organico" } },
-      "pinterest": { "id": 7454, "params": { "default": "&nemu_source=pinterest&nemu_adset=organico" } },
-      "youtube": { "id": 7456, "params": { "default": "&nemu_source=youtube&nemu_adset=organico" } },
-      "linkedin": { "id": 7458, "params": { "default": "&nemu_source=linkedin&nemu_adset=organico" } }
+      "facebook": { "id": 7450, "params": { "default": "&nemu_source=facebook_lr&nemu_adset=organico" } },
+      "tiktok": { "id": 7452, "params": { "default": "&nemu_source=tiktok_lr&nemu_adset=organico" } },
+      "pinterest": { "id": 7454, "params": { "default": "&nemu_source=pinterest_lr&nemu_adset=organico" } },
+      "youtube": { "id": 7456, "params": { "default": "&nemu_source=youtube_lr&nemu_adset=organico" } },
+      "linkedin": { "id": 7458, "params": { "default": "&nemu_source=linkedin_lr&nemu_adset=organico" } }
+    }
+  },
+
+    "lives": {
+    "rigolim": {
+      "instagram": {
+        "id": 7534,
+        "params": {
+          "live": "&nemu_source=live_instagram_rhc&nemu_adset=organico"
+        }
+      },
+      "facebook": { "id": 7536, "params": { "default": "&nemu_source=live_facebook_rhc&nemu_adset=organico" } },
+      "tiktok": { "id": 7538, "params": { "default": "&nemu_source=live_tiktok_rhc&nemu_adset=organico" } },
+      "pinterest": { "id": 7540, "params": { "default": "&nemu_source=live_pinterest_rhc&nemu_adset=organico" } },
+      "youtube": { "id": 7542, "params": { "default": "&nemu_source=live_youtube_rhc&nemu_adset=organico" } },
+      "linkedin": { "id": 7544, "params": { "default": "&nemu_source=live_linkedin_rhc&nemu_adset=organico" } },
+      "embaixadores": { "id": 7558, "params": { "default": "&nemu_source=embaixadores_rhc&nemu_adset=organico" } },
+      "experts": { "id": 7560, "params": { "default": "&nemu_source=experts_rhc&nemu_adset=organico" } }
+    },
+    "leticia": {
+      "instagram": {
+        "id": 7546,
+        "params": {
+          "live": "&nemu_source=live_instagram_lr&nemu_adset=organico"
+        }
+      },
+      "facebook": { "id": 7548, "params": { "default": "&nemu_source=live_facebook_lr&nemu_adset=organico" } },
+      "tiktok": { "id": 7550, "params": { "default": "&nemu_source=live_tiktok_lr&nemu_adset=organico" } },
+      "pinterest": { "id": 7552, "params": { "default": "&nemu_source=live_pinterest_lr&nemu_adset=organico" } },
+      "youtube": { "id": 7554, "params": { "default": "&nemu_source=live_youtube_lr&nemu_adset=organico" } },
+      "linkedin": { "id": 7556, "params": { "default": "&nemu_source=live_linkedin_lr&nemu_adset=organico" } },
+    }
+  },
+  
+    "black-friday": {
+    "rigolim": {
+      "instagram": {
+        "id": 7502,
+        "params": {
+          "link_bio": "&nemu_source=link_bio_instagram_rhc&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_rhc&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_rhc&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_rhc&nemu_adset=organico"
+        }
+      },
+      "facebook": { "id": 7504, "params": { "default": "&nemu_source=facebook_rhc&nemu_adset=organico" } },
+      "tiktok": { "id": 7506, "params": { "default": "&nemu_source=tiktok_rhc&nemu_adset=organico" } },
+      "pinterest": { "id": 7508, "params": { "default": "&nemu_source=pinterest_rhc&nemu_adset=organico" } },
+      "youtube": { "id": 7510, "params": { "default": "&nemu_source=youtube_rhc&nemu_adset=organico" } },
+      "linkedin": { "id": 7512, "params": { "default": "&nemu_source=linkedin_rhc&nemu_adset=organico" } },
+      "grupo-vip": { "id": 7526, "params": { "default": "&nemu_source=grupo-vip-rigolover_rhc&nemu_adset=organico" } },
+      "embaixadores": { "id": 7530, "params": { "default": "&nemu_source=embaixadores_rhc&nemu_adset=organico" } },
+      "experts": { "id": 7532, "params": { "default": "&nemu_source=experts_rhc&nemu_adset=organico" } }
+    },
+    "leticia": {
+      "instagram": {
+        "id": 7514,
+        "params": {
+          "link_bio": "&nemu_source=link_bio_instagram_lr&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_lr&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_lr&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_lr&nemu_adset=organico"
+        }
+      },
+      "facebook": { "id": 7516, "params": { "default": "&nemu_source=facebook_lr&nemu_adset=organico" } },
+      "tiktok": { "id": 7518, "params": { "default": "&nemu_source=tiktok_lr&nemu_adset=organico" } },
+      "pinterest": { "id": 7520, "params": { "default": "&nemu_source=pinterest_lr&nemu_adset=organico" } },
+      "youtube": { "id": 7522, "params": { "default": "&nemu_source=youtube_lr&nemu_adset=organico" } },
+      "linkedin": { "id": 7524, "params": { "default": "&nemu_source=linkedin_lr&nemu_adset=organico" } },
+      "grupo-vip": { "id": 7528, "params": { "default": "&nemu_source=grupo-vip-leticia_lr&nemu_adset=organico" } }
     }
   }
 }
+
