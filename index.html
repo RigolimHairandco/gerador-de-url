@@ -13,6 +13,50 @@
       color: #333;
     }
 
+    .header {
+      background: #727272;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .header a {
+      color: #fff;
+      text-decoration: none;
+      background: #484848;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .header a:hover {
+      background: #343434;
+    }
+
+    .header-status {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .status-ok { background: #00c853; }
+    .status-error { background: #ff3d00; }
+
     .app {
       max-width: 650px;
       margin: 0 auto;
@@ -45,7 +89,7 @@
     }
 
     button {
-      background: #5d2f03;
+      background: #23a132;
       color: #fff;
       border: none;
       padding: 10px 16px;
@@ -55,7 +99,7 @@
     }
 
     button:hover {
-      background: #7a4310;
+      background: #36883f;
     }
 
     .result {
@@ -71,9 +115,7 @@
       color: #333;
     }
 
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
 
     .history {
       margin-top: 30px;
@@ -111,26 +153,6 @@
       color: #666;
     }
 
-    .history-actions {
-      display: flex;
-      gap: 8px;
-      margin-top: 4px;
-    }
-
-    .copy-btn {
-      background: #5d2f03;
-      color: #fff;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 12px;
-    }
-
-    .copy-btn:hover {
-      background: #7a4310;
-    }
-
     .copy-btn-history {
       background: #444;
       color: #fff;
@@ -141,16 +163,19 @@
       font-size: 12px;
     }
 
+    .copy-btn-history:hover {
+      background: #727272;
+      color: #fff;
+    }
+
     #clearBtn {
-      background: #ff0000;
+      background: #000000;
       color: #fff;
       font-weight: 600;
       margin-top: 10px;
     }
 
-    #clearBtn:hover {
-      background: #9c0909;
-    }
+    #clearBtn:hover { background: #515151; }
 
     #copyFeedback, #clearFeedback {
       color: green;
@@ -161,6 +186,17 @@
   </style>
 </head>
 <body>
+  <div class="header">
+    <div class="header-status" id="headerStatus">
+      <span class="status-dot status-error"></span>
+      <span>Carregando JSON...</span>
+    </div>
+    <div class="header-actions">
+      <a href="https://rigolimhairandco.github.io/gerador-de-url/config.json" target="_blank">🔍 Ver JSON</a>
+      <a href="https://rigolimhairandco.github.io/gerador-de-url/gerar-json.html" target="_blank">🧩 Editar JSON</a>
+    </div>
+  </div>
+
   <div class="app">
     <h1>🔗 Gerador de URLs Parametrizadas</h1>
 
@@ -212,16 +248,21 @@
     const clearBtn = document.getElementById('clearBtn');
     const clearFeedback = document.getElementById('clearFeedback');
     const historyList = document.getElementById('historyList');
+    const headerStatus = document.getElementById('headerStatus');
 
-    // Carrega config.json
-    fetch('config.json')
-      .then(response => response.json())
+    // Carrega config.json com status visual no header
+    fetch('https://rigolimhairandco.github.io/gerador-de-url/config.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Erro ao carregar JSON');
+        return response.json();
+      })
       .then(data => {
         configData = data;
+        headerStatus.innerHTML = '<span class="status-dot status-ok"></span><span>JSON carregado com sucesso ✅</span>';
         populateCampaigns();
       })
       .catch(err => {
-        alert('Erro ao carregar config.json. Verifique se o arquivo está na mesma pasta.');
+        headerStatus.innerHTML = '<span class="status-dot status-error"></span><span>Erro ao carregar JSON ⚠️</span>';
         console.error(err);
       });
 
@@ -321,7 +362,6 @@
       history.forEach(item => {
         const li = document.createElement("li");
         li.classList.add("history-item");
-
         li.innerHTML = `
           <strong>${item.campaign.toUpperCase()} | ${item.brand.toUpperCase()} | ${item.channel.toUpperCase()} | ${item.subtype.toUpperCase()}</strong>
           <div class="history-meta">🕒 ${item.timestamp}</div>
@@ -338,16 +378,6 @@
       if (!text) return;
       navigator.clipboard.writeText(text)
         .then(() => {
-          feedbackEl.style.display = "block";
-          setTimeout(() => feedbackEl.style.display = "none", 2000);
-        })
-        .catch(() => {
-          const temp = document.createElement("input");
-          temp.value = text;
-          document.body.appendChild(temp);
-          temp.select();
-          document.execCommand("copy");
-          document.body.removeChild(temp);
           feedbackEl.style.display = "block";
           setTimeout(() => feedbackEl.style.display = "none", 2000);
         });
