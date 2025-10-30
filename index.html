@@ -132,14 +132,14 @@
     }
 
     #clearBtn {
-      /*background: #bbb;
-      color: #333;*/
+      background: #bbb;
+      color: #333;
       font-weight: 600;
       margin-top: 10px;
     }
 
     #clearBtn:hover {
-      background: #7a4310;
+      background: #999;
     }
 
     #copyFeedback, #clearFeedback {
@@ -203,7 +203,7 @@
     const clearFeedback = document.getElementById('clearFeedback');
     const historyList = document.getElementById('historyList');
 
-    // Carrega o JSON
+    // Carrega config.json
     fetch('config.json')
       .then(response => response.json())
       .then(data => {
@@ -317,18 +317,19 @@
           <div class="history-meta">🕒 ${item.timestamp}</div>
           <div class="history-link">${item.url}</div>
           <div class="history-actions">
-            <button class="copy-btn" onclick="copyToClipboard('${item.url}')">Copiar</button>
+            <button class="copy-btn" onclick="copyToClipboard('${item.url}', copyFeedback)">Copiar</button>
           </div>
         `;
         historyList.appendChild(li);
       });
     }
 
-    function copyToClipboard(text) {
+    function copyToClipboard(text, feedbackEl) {
+      if (!text) return;
       navigator.clipboard.writeText(text)
         .then(() => {
-          copyFeedback.style.display = "block";
-          setTimeout(() => copyFeedback.style.display = "none", 2000);
+          feedbackEl.style.display = "block";
+          setTimeout(() => feedbackEl.style.display = "none", 2000);
         })
         .catch(() => {
           const temp = document.createElement("input");
@@ -337,8 +338,15 @@
           temp.select();
           document.execCommand("copy");
           document.body.removeChild(temp);
+          feedbackEl.style.display = "block";
+          setTimeout(() => feedbackEl.style.display = "none", 2000);
         });
     }
+
+    copyBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      copyToClipboard(finalUrlInput.value, copyFeedback);
+    });
 
     function clearHistory() {
       if (!confirm("Tem certeza que deseja apagar todo o histórico?")) return;
