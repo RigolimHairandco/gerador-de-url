@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSON Builder Rigolim</title>
+  <title>JSON Builder Rigolim v2.3</title>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -97,11 +97,12 @@
 </head>
 <body>
   <div class="container">
-    <h1>🧩 JSON Builder - Rigolim</h1>
+    <h1>🧩 JSON Builder - Rigolim v2.3</h1>
 
     <div class="actions">
       <button onclick="addCampaign()">➕ Adicionar Campanha</button>
       <button onclick="importJson()">📂 Importar JSON</button>
+      <button onclick="importJsonFromUrl()">🌐 Importar via URL</button>
       <button onclick="save()">💾 Salvar</button>
       <button onclick="validateJson()">🧠 Validar Agora</button>
       <button id="copyBtn" onclick="copyJson()" disabled>📋 Copiar JSON</button>
@@ -119,13 +120,15 @@
   <div id="toast" class="toast"></div>
 
   <script>
-    let data = JSON.parse(localStorage.getItem("json_builder_v21") || '{"campanhas": []}');
+    let data = JSON.parse(localStorage.getItem("json_builder_v23") || '{"campanhas": []}');
     const builder = document.getElementById("builder");
     const jsonPreview = document.getElementById("jsonPreview");
     const statusDiv = document.getElementById("status");
     const downloadBtn = document.getElementById("downloadBtn");
     const copyBtn = document.getElementById("copyBtn");
     const toast = document.getElementById("toast");
+
+    const defaultJsonUrl = "https://rigolimhairandco.github.io/gerador-de-url/config.json";
 
     // ======= FUNÇÕES DE INTERFACE =======
 
@@ -136,7 +139,7 @@
     }
 
     function save() {
-      localStorage.setItem("json_builder_v21", JSON.stringify(data));
+      localStorage.setItem("json_builder_v23", JSON.stringify(data));
       showToast("💾 JSON salvo com sucesso!");
       render();
     }
@@ -303,19 +306,7 @@
         reader.onload = ev => {
           try {
             const imported = JSON.parse(ev.target.result);
-            data = { campanhas: [] };
-            Object.entries(imported).forEach(([campanhaNome, marcas]) => {
-              const campanha = { nome: campanhaNome, marcas: [] };
-              Object.entries(marcas).forEach(([marcaNome, canais]) => {
-                const marca = { nome: marcaNome, canais: [] };
-                Object.entries(canais).forEach(([canalNome, canalDados]) => {
-                  const paramsArr = Object.entries(canalDados.params || {}).map(([n, v]) => ({ nome: n, valor: v }));
-                  marca.canais.push({ nome: canalNome, id: canalDados.id, params: paramsArr });
-                });
-                campanha.marcas.push(marca);
-              });
-              data.campanhas.push(campanha);
-            });
+            convertImportedJson(imported);
             save();
             showToast("📂 JSON importado com sucesso!");
           } catch {
@@ -327,10 +318,42 @@
       input.click();
     }
 
+    async function importJsonFromUrl() {
+      const url = prompt("Informe a URL do JSON:", defaultJsonUrl);
+      if (!url) return;
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Erro ao buscar JSON remoto");
+        const imported = await response.json();
+        convertImportedJson(imported);
+        save();
+        showToast("🌐 JSON importado com sucesso via URL!");
+      } catch (err) {
+        console.error(err);
+        alert("Erro ao importar JSON via link.");
+      }
+    }
+
+    function convertImportedJson(imported) {
+      data = { campanhas: [] };
+      Object.entries(imported).forEach(([campanhaNome, marcas]) => {
+        const campanha = { nome: campanhaNome, marcas: [] };
+        Object.entries(marcas).forEach(([marcaNome, canais]) => {
+          const marca = { nome: marcaNome, canais: [] };
+          Object.entries(canais).forEach(([canalNome, canalDados]) => {
+            const paramsArr = Object.entries(canalDados.params || {}).map(([n, v]) => ({ nome: n, valor: v }));
+            marca.canais.push({ nome: canalNome, id: canalDados.id, params: paramsArr });
+          });
+          campanha.marcas.push(marca);
+        });
+        data.campanhas.push(campanha);
+      });
+    }
+
     function clearAll() {
       if (confirm("Tem certeza que deseja limpar tudo?")) {
         data = { campanhas: [] };
-        localStorage.removeItem("json_builder_v21");
+        localStorage.removeItem("json_builder_v23");
         render();
         jsonPreview.style.display = 'none';
         statusDiv.textContent = '';
