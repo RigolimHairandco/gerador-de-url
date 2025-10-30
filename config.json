@@ -34,7 +34,7 @@
     }
   },
 
-    "lives": {
+  "lives": {
     "rigolim": {
       "instagram": {
         "id": 7534,
@@ -61,11 +61,11 @@
       "tiktok": { "id": 7550, "params": { "default": "&nemu_source=live_tiktok_lr&nemu_adset=organico" } },
       "pinterest": { "id": 7552, "params": { "default": "&nemu_source=live_pinterest_lr&nemu_adset=organico" } },
       "youtube": { "id": 7554, "params": { "default": "&nemu_source=live_youtube_lr&nemu_adset=organico" } },
-      "linkedin": { "id": 7556, "params": { "default": "&nemu_source=live_linkedin_lr&nemu_adset=organico" } },
+      "linkedin": { "id": 7556, "params": { "default": "&nemu_source=live_linkedin_lr&nemu_adset=organico" } }
     }
   },
-  
-    "black-friday": {
+
+  "black-friday": {
     "rigolim": {
       "instagram": {
         "id": 7502,
@@ -81,7 +81,7 @@
       "pinterest": { "id": 7508, "params": { "default": "&nemu_source=pinterest_rhc&nemu_adset=organico" } },
       "youtube": { "id": 7510, "params": { "default": "&nemu_source=youtube_rhc&nemu_adset=organico" } },
       "linkedin": { "id": 7512, "params": { "default": "&nemu_source=linkedin_rhc&nemu_adset=organico" } },
-      "grupo-vip": { "id": 7526, "params": { "default": "&nemu_source=grupo-vip-rigolover_rhc&nemu_adset=organico" } },
+      "grupo-vip": { "id": 7526, "params": { "default": "&nemu_source=grupo-vip_rigolover_rhc&nemu_adset=organico" } },
       "embaixadores": { "id": 7530, "params": { "default": "&nemu_source=embaixadores_rhc&nemu_adset=organico" } },
       "experts": { "id": 7532, "params": { "default": "&nemu_source=experts_rhc&nemu_adset=organico" } }
     },
@@ -100,8 +100,7 @@
       "pinterest": { "id": 7520, "params": { "default": "&nemu_source=pinterest_lr&nemu_adset=organico" } },
       "youtube": { "id": 7522, "params": { "default": "&nemu_source=youtube_lr&nemu_adset=organico" } },
       "linkedin": { "id": 7524, "params": { "default": "&nemu_source=linkedin_lr&nemu_adset=organico" } },
-      "grupo-vip": { "id": 7528, "params": { "default": "&nemu_source=grupo-vip-leticia_lr&nemu_adset=organico" } }
+      "grupo-vip": { "id": 7528, "params": { "default": "&nemu_source=grupo-vip_leticia_lr&nemu_adset=organico" } }
     }
   }
 }
-
