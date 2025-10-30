@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Builder Rigolim</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+    h1 { text-align: center; }
+    button {
+      background: #5d2f03;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+    button:hover { background: #7a4310; }
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin: 3px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    input.error {
+      border-color: red;
+      background: #ffecec;
+    }
+    .section {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 15px;
+      background: #fafafa;
+    }
+    .level { margin-left: 20px; }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    #status {
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    #status.success { color: green; }
+    #status.error { color: red; }
+    #jsonPreview {
+      display: none;
+    }
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 JSON Builder - Rigolim</h1>
+
+    <div class="actions">
+      <button onclick="addCampaign()">➕ Adicionar Campanha</button>
+      <button onclick="importJson()">📂 Importar JSON</button>
+      <button onclick="save()">💾 Salvar</button>
+      <button onclick="validateJson()">🧠 Validar Agora</button>
+      <button id="copyBtn" onclick="copyJson()" disabled>📋 Copiar JSON</button>
+      <button id="downloadBtn" onclick="downloadJson()" disabled>💾 Baixar JSON</button>
+      <button onclick="clearAll()">🗑️ Limpar Tudo</button>
+    </div>
+
+    <div id="status"></div>
+    <div id="builder"></div>
+
+    <h2>Preview do JSON</h2>
+    <pre id="jsonPreview">{}</pre>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    let data = JSON.parse(localStorage.getItem("json_builder_v21") || '{"campanhas": []}');
+    const builder = document.getElementById("builder");
+    const jsonPreview = document.getElementById("jsonPreview");
+    const statusDiv = document.getElementById("status");
+    const downloadBtn = document.getElementById("downloadBtn");
+    const copyBtn = document.getElementById("copyBtn");
+    const toast = document.getElementById("toast");
+
+    // ======= FUNÇÕES DE INTERFACE =======
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function save() {
+      localStorage.setItem("json_builder_v21", JSON.stringify(data));
+      showToast("💾 JSON salvo com sucesso!");
+      render();
+    }
+
+    function render() {
+      builder.innerHTML = "";
+      data.campanhas.forEach((campanha, cIndex) => {
+        const cDiv = document.createElement("div");
+        cDiv.className = "section";
+        cDiv.innerHTML = `
+          <strong>Campanha:</strong>
+          <input value="${campanha.nome}" 
+            onblur="data.campanhas[${cIndex}].nome=this.value; save()" 
+            placeholder="Nome da campanha">
+          <button onclick="addBrand(${cIndex})">+ Marca</button>
+          <button onclick="removeCampaign(${cIndex})">🗑️</button>
+        `;
+        campanha.marcas.forEach((marca, mIndex) => {
+          const mDiv = document.createElement("div");
+          mDiv.className = "section level";
+          mDiv.innerHTML = `
+            <strong>Marca:</strong>
+            <input value="${marca.nome}" 
+              onblur="data.campanhas[${cIndex}].marcas[${mIndex}].nome=this.value; save()" 
+              placeholder="Nome da marca">
+            <button onclick="addChannel(${cIndex},${mIndex})">+ Canal</button>
+            <button onclick="removeBrand(${cIndex},${mIndex})">🗑️</button>
+          `;
+          marca.canais.forEach((canal, chIndex) => {
+            const chDiv = document.createElement("div");
+            chDiv.className = "section level";
+            chDiv.innerHTML = `
+              <strong>Canal:</strong>
+              <input value="${canal.nome}" 
+                onblur="data.campanhas[${cIndex}].marcas[${mIndex}].canais[${chIndex}].nome=this.value; save()" 
+                placeholder="Nome do canal">
+              <label>ID [Parceiro Tray]:</label>
+              <input type="number" value="${canal.id}" 
+                onblur="data.campanhas[${cIndex}].marcas[${mIndex}].canais[${chIndex}].id=this.value; save()">
+              <button onclick="addParam(${cIndex},${mIndex},${chIndex})">+ Parâmetro</button>
+              <button onclick="removeChannel(${cIndex},${mIndex},${chIndex})">🗑️</button>
+            `;
+            canal.params.forEach((param, pIndex) => {
+              const pDiv = document.createElement("div");
+              pDiv.className = "section level";
+              pDiv.innerHTML = `
+                <input value="${param.nome}" 
+                  onblur="data.campanhas[${cIndex}].marcas[${mIndex}].canais[${chIndex}].params[${pIndex}].nome=this.value; save()" 
+                  placeholder="Nome do parâmetro (ex: default)">
+                <input value="${param.valor}" 
+                  onblur="data.campanhas[${cIndex}].marcas[${mIndex}].canais[${chIndex}].params[${pIndex}].valor=this.value; save()" 
+                  placeholder="Valor do parâmetro">
+                <button onclick="removeParam(${cIndex},${mIndex},${chIndex},${pIndex})">🗑️</button>
+              `;
+              chDiv.appendChild(pDiv);
+            });
+            mDiv.appendChild(chDiv);
+          });
+          cDiv.appendChild(mDiv);
+        });
+        builder.appendChild(cDiv);
+      });
+    }
+
+    // ======= ESTRUTURA =======
+
+    function addCampaign() { data.campanhas.push({ nome: "", marcas: [] }); save(); }
+    function removeCampaign(i) { data.campanhas.splice(i, 1); save(); }
+    function addBrand(c) { data.campanhas[c].marcas.push({ nome: "", canais: [] }); save(); }
+    function removeBrand(c, m) { data.campanhas[c].marcas.splice(m, 1); save(); }
+    function addChannel(c, m) { data.campanhas[c].marcas[m].canais.push({ nome: "", id: "", params: [] }); save(); }
+    function removeChannel(c, m, ch) { data.campanhas[c].marcas[m].canais.splice(ch, 1); save(); }
+    function addParam(c, m, ch) { data.campanhas[c].marcas[m].canais[ch].params.push({ nome: "", valor: "" }); save(); }
+    function removeParam(c, m, ch, p) { data.campanhas[c].marcas[m].canais[ch].params.splice(p, 1); save(); }
+
+    // ======= GERAÇÃO E VALIDAÇÃO =======
+
+    function generateFinalJson() {
+      const final = {};
+      data.campanhas.forEach(c => {
+        if (!c.nome) return;
+        final[c.nome] = {};
+        c.marcas.forEach(m => {
+          if (!m.nome) return;
+          final[c.nome][m.nome] = {};
+          m.canais.forEach(ch => {
+            if (!ch.nome || !ch.id) return;
+            const paramsObj = {};
+            ch.params.forEach(p => { if (p.nome) paramsObj[p.nome] = p.valor; });
+            final[c.nome][m.nome][ch.nome] = { id: Number(ch.id), params: paramsObj };
+          });
+        });
+      });
+      return final;
+    }
+
+    function validateJson() {
+      let errors = [];
+      const seenIds = new Set();
+      document.querySelectorAll('input').forEach(el => el.classList.remove('error'));
+
+      data.campanhas.forEach((c, ci) => {
+        if (!c.nome.trim()) errors.push(`Campanha ${ci+1} sem nome.`);
+        c.marcas.forEach((m, mi) => {
+          if (!m.nome.trim()) errors.push(`Marca ${mi+1} em ${c.nome||"campanha"} sem nome.`);
+          m.canais.forEach((ch) => {
+            if (!ch.nome.trim()) errors.push(`Canal sem nome em ${m.nome||"marca"}.`);
+            if (!ch.id || isNaN(ch.id)) errors.push(`Canal ${ch.nome||"(sem nome)"} com ID inválido.`);
+            if (seenIds.has(ch.id)) errors.push(`ID duplicado detectado: ${ch.id}`);
+            seenIds.add(ch.id);
+            ch.params.forEach(p => { if (!p.nome.trim()) errors.push(`Parâmetro sem nome em canal ${ch.nome||"?"}.`); });
+          });
+        });
+      });
+
+      if (errors.length > 0) {
+        statusDiv.className = 'error';
+        statusDiv.textContent = `❌ ${errors.length} erro(s) encontrado(s). Corrija antes de exportar.`;
+        jsonPreview.style.display = 'none';
+        downloadBtn.disabled = true;
+        copyBtn.disabled = true;
+      } else {
+        statusDiv.className = 'success';
+        statusDiv.textContent = '✅ Tudo certo! JSON válido e pronto para exportar.';
+        jsonPreview.textContent = JSON.stringify(generateFinalJson(), null, 2);
+        jsonPreview.style.display = 'block';
+        downloadBtn.disabled = false;
+        copyBtn.disabled = false;
+      }
+    }
+
+    // ======= EXPORTAÇÃO =======
+
+    function copyJson() {
+      validateJson();
+      if (copyBtn.disabled) return;
+      const jsonStr = JSON.stringify(generateFinalJson(), null, 2);
+      navigator.clipboard.writeText(jsonStr)
+        .then(() => showToast("📋 JSON copiado com sucesso!"))
+        .catch(() => alert("Falha ao copiar JSON."));
+    }
+
+    function downloadJson() {
+      validateJson();
+      if (downloadBtn.disabled) return;
+      const jsonStr = JSON.stringify(generateFinalJson(), null, 2);
+      const blob = new Blob([jsonStr], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "config.json";
+      a.click();
+      showToast("💾 JSON exportado com sucesso!");
+    }
+
+    // ======= IMPORTAÇÃO E RESET =======
+
+    function importJson() {
+      const input = document.createElement("input");
+      input.type = "file";
+      input.accept = ".json";
+      input.onchange = e => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onload = ev => {
+          try {
+            const imported = JSON.parse(ev.target.result);
+            data = { campanhas: [] };
+            Object.entries(imported).forEach(([campanhaNome, marcas]) => {
+              const campanha = { nome: campanhaNome, marcas: [] };
+              Object.entries(marcas).forEach(([marcaNome, canais]) => {
+                const marca = { nome: marcaNome, canais: [] };
+                Object.entries(canais).forEach(([canalNome, canalDados]) => {
+                  const paramsArr = Object.entries(canalDados.params || {}).map(([n, v]) => ({ nome: n, valor: v }));
+                  marca.canais.push({ nome: canalNome, id: canalDados.id, params: paramsArr });
+                });
+                campanha.marcas.push(marca);
+              });
+              data.campanhas.push(campanha);
+            });
+            save();
+            showToast("📂 JSON importado com sucesso!");
+          } catch {
+            alert("Erro ao importar JSON.");
+          }
+        };
+        reader.readAsText(file);
+      };
+      input.click();
+    }
+
+    function clearAll() {
+      if (confirm("Tem certeza que deseja limpar tudo?")) {
+        data = { campanhas: [] };
+        localStorage.removeItem("json_builder_v21");
+        render();
+        jsonPreview.style.display = 'none';
+        statusDiv.textContent = '';
+      }
+    }
+
+    render();
+  </script>
+</body>
+</html>
