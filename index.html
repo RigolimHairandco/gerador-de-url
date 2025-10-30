@@ -183,6 +183,29 @@
       margin-top: 5px;
       display: none;
     }
+
+    @media (max-width:600px) {
+      .header {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .a-json, .b-json {
+        display: block;
+        font-size: 10px !important;
+        margin-top: 10px;
+      }
+
+      .b-json {
+        margin-left: 5px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -192,8 +215,8 @@
       <span>Carregando JSON...</span>
     </div>
     <div class="header-actions">
-      <a href="https://rigolimhairandco.github.io/gerador-de-url/config.json" target="_blank">🔍 Ver JSON</a>
-      <a href="https://rigolimhairandco.github.io/gerador-de-url/gerar-json.html" target="_blank">🧩 Editar JSON</a>
+      <a class="a-json" href="https://rigolimhairandco.github.io/gerador-de-url/config.json" target="_blank">🔍 Ver JSON</a>
+      <a class="b-json" href="https://rigolimhairandco.github.io/gerador-de-url/gerar-json.html" target="_blank">🧩 Editar JSON</a>
     </div>
   </div>
 
