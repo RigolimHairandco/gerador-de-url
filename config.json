@@ -45,6 +45,12 @@
         "params": {
           "default": "&nemu_source=grupo-vip_rigolover_rhc&nemu_adset=organico"
         }
+      },
+      "aplicativo": {
+        "id": 7568,
+        "params": {
+          "default": "&nemu_source=aplicativo_rhc&nemu_adset=organico"
+        }
       }
     },
     "leticia": {
@@ -242,6 +248,12 @@
         "id": 7532,
         "params": {
           "default": "&nemu_source=experts_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "aplicativo": {
+        "id": 7566,
+        "params": {
+          "default": "&nemu_source=aplicativo_rhc_black_friday&nemu_adset=organico"
         }
       }
     },
