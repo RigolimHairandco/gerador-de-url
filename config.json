@@ -106,7 +106,7 @@
       "grupo-vip": {
         "id": 7564,
         "params": {
-          "default": "grupo-vip_leticia_lr"
+          "default": "&nemu_source=grupo-vip_leticia_lr&nemu_adset=organico"
         }
       }
     }
@@ -326,3 +326,4 @@
     }
   }
 }
+
