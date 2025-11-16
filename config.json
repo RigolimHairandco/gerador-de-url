@@ -60,7 +60,9 @@
       },
       "trafego - google ads": {
         "id": 7078,
-        "params": {}
+        "params": {
+          "default": ""
+        }
       }
     },
     "leticia": {
@@ -106,7 +108,7 @@
       "grupo-vip": {
         "id": 7564,
         "params": {
-          "default": "&nemu_source=grupo-vip_leticia_lr&nemu_adset=organico"
+          "default": "&nemu_source=grupo-vip_leticia&nemu_adset=organico"
         }
       }
     }
@@ -274,7 +276,9 @@
       },
       "trafego - google ads": {
         "id": 7574,
-        "params": {}
+        "params": {
+          "default": ""
+        }
       }
     },
     "leticia": {
@@ -326,4 +330,3 @@
     }
   }
 }
-
