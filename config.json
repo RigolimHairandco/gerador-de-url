@@ -51,6 +51,16 @@
         "params": {
           "default": "&nemu_source=aplicativo_rhc&nemu_adset=organico"
         }
+      },
+      "trafego - meta ads": {
+        "id": 7572,
+        "params": {
+          "default": "&utm_source=facebook&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium=cpc&utm_content={{ad.name}}|{{ad.id}}&utm_term={{adset.name}}|{{adset.id}}&nemu_source=facebook&nemu_campaign={{campaign.name}}|{{campaign.id}}&nemu_adset={{adset.name}}|{{adset.id}}&nemu_content={{ad.name}}|{{ad.id}}"
+        }
+      },
+      "trafego - google ads": {
+        "id": 7078,
+        "params": {}
       }
     },
     "leticia": {
@@ -255,6 +265,16 @@
         "params": {
           "default": "&nemu_source=aplicativo_rhc_black_friday&nemu_adset=organico"
         }
+      },
+      "trafego - meta ads": {
+        "id": 7570,
+        "params": {
+          "default": "&utm_source=facebook&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium=cpc&utm_content={{ad.name}}|{{ad.id}}&utm_term={{adset.name}}|{{adset.id}}&nemu_source=facebook&nemu_campaign={{campaign.name}}|{{campaign.id}}&nemu_adset={{adset.name}}|{{adset.id}}&nemu_content={{ad.name}}|{{ad.id}}"
+        }
+      },
+      "trafego - google ads": {
+        "id": 7574,
+        "params": {}
       }
     },
     "leticia": {
