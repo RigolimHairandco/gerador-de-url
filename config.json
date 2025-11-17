@@ -279,6 +279,12 @@
         "params": {
           "default": ""
         }
+      },
+      "e-mail marketing - edrone": {
+        "id": 7576,
+        "params": {
+          "default": "&nemu_source=email-mkt-edrone&nemu_adset=organico"
+        }
       }
     },
     "leticia": {
