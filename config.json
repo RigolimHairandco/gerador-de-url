@@ -61,7 +61,7 @@
       "trafego - google ads": {
         "id": 7078,
         "params": {
-          "default": "7584"
+          "default": ""
         }
       },
       "whatsapp": {
@@ -360,3 +360,4 @@
     }
   }
 }
+
