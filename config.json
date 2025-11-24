@@ -118,7 +118,7 @@
         }
       },
       "whatsapp": {
-        "id": 7562,
+        "id": 7580,
         "params": {
           "default": "&nemu_source=whatsapp_leticia&nemu_adset=organico"
         }
@@ -360,4 +360,5 @@
     }
   }
 }
+
 
