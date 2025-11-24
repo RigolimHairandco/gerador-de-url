@@ -61,7 +61,13 @@
       "trafego - google ads": {
         "id": 7078,
         "params": {
-          "default": ""
+          "default": "7584"
+        }
+      },
+      "whatsapp": {
+        "id": 7584,
+        "params": {
+          "default": "&nemu_source=whatsapp-rigolim&nemu_adset=organico"
         }
       }
     },
@@ -109,6 +115,12 @@
         "id": 7564,
         "params": {
           "default": "&nemu_source=grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "whatsapp": {
+        "id": 7562,
+        "params": {
+          "default": "&nemu_source=whatsapp_leticia&nemu_adset=organico"
         }
       }
     }
@@ -285,6 +297,12 @@
         "params": {
           "default": "&nemu_source=email-mkt-edrone&nemu_adset=organico"
         }
+      },
+      "whatsapp": {
+        "id": 7586,
+        "params": {
+          "default": "&nemu_source=whatsapp-black-rigolim&nemu_adset=organico"
+        }
       }
     },
     "leticia": {
@@ -331,6 +349,12 @@
         "id": 7528,
         "params": {
           "default": "&nemu_source=grupo-vip_leticia_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "whatsapp": {
+        "id": 7582,
+        "params": {
+          "default": "&nemu_source=whatsapp_black_leticia&nemu_adset=organico"
         }
       }
     }
