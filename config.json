@@ -730,5 +730,155 @@
         }
       }
     }
+  },
+  "Cyber Monday ": {
+    "rigolim": {
+      "Instagram - Link Bio": {
+        "id": 7884,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_bio_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 7886,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_stories_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 7888,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_canal_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 7890,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_dm_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 7892,
+        "params": {
+          "default": "&nemu_source=cyber-monday-facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "TikTok ": {
+        "id": 7894,
+        "params": {
+          "default": "&cyber-monday-nemu_source=tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 7896,
+        "params": {
+          "default": "&nemu_source=cyber-monday-pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 7898,
+        "params": {
+          "default": "&nemu_source=cyber-monday-youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 7900,
+        "params": {
+          "default": "&nemu_source=cyber-monday-linkedin_rhc&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 7902,
+        "params": {
+          "default": "&nemu_source=cyber-monday-aplicativo_rhc&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 7904,
+        "params": {
+          "default": "&nemu_source=cyber-monday-grupo-vip_rigolovers_rhc&nemu_adset=organico"
+        }
+      },
+      "WhatsApp": {
+        "id": 7906,
+        "params": {
+          "default": "&nemu_source=cyber-monday-whatsapp-rigolim&nemu_adset=organico"
+        }
+      }
+    },
+    "Leticia ": {
+      "Instagram - Link Bio": {
+        "id": 7908,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_bio_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories ": {
+        "id": 7910,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_stories_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 7912,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_canal_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 7914,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_dm_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 7916,
+        "params": {
+          "default": "&nemu_source=cyber-monday-facebook_leticia&nemu_adset=organico"
+        }
+      },
+      "TikTok": {
+        "id": 7918,
+        "params": {
+          "default": "&nemu_source=cyber-monday-tiktok_leticia&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 7920,
+        "params": {
+          "default": "&nemu_source=cyber-monday-pinterest_leticia&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 7922,
+        "params": {
+          "default": "&nemu_source=cyber-monday-youtube_leticia&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 7924,
+        "params": {
+          "default": "&nemu_source=cyber-monday-linkedin_leticia&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 7926,
+        "params": {
+          "default": "&nemu_source=cyber-monday-aplicativo_leticia&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 7928,
+        "params": {
+          "default": "&nemu_source=cyber-monday-grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "WhatsApp ": {
+        "id": 7930,
+        "params": {
+          "default": "&nemu_source=cyber-monday-whatsapp_leticia&nemu_adset=organico"
+        }
+      }
+    }
   }
 }
