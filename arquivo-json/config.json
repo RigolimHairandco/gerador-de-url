@@ -928,7 +928,7 @@
       "TikTok ": {
         "id": 7946,
         "params": {
-          "default": "&cyber-monday-nemu_source=natal-tiktok_rhc&nemu_adset=organico"
+          "default": "&nemu_source=natal-tiktok_rhc&nemu_adset=organico"
         }
       },
       "Pinterest ": {
