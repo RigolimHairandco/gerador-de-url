@@ -1,5 +1,5 @@
 {
-  "rotina": {
+  "Rotina": {
     "rigolim": {
       "instagram": {
         "id": 7120,
@@ -125,7 +125,7 @@
       }
     }
   },
-  "lives": {
+  "Lives": {
     "rigolim": {
       "instagram": {
         "id": 7534,
@@ -215,7 +215,255 @@
       }
     }
   },
-  "black-friday": {
+  "Rotina Embaixadores": {
+    "rigolim": {
+      "claudineia-panosso": {
+        "id": 7628,
+        "params": {
+          "default": "&nemu_source=embaixadores-claudia-panosso&nemu_adset=organico"
+        }
+      },
+      "sara-de-oliveira-silva": {
+        "id": 7630,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-sara-oliveira&nemu_adset=organico"
+        }
+      },
+      "luiz-fernando-de-souza-silva": {
+        "id": 7632,
+        "params": {
+          "default": "&nemu_source=embaixadores-luiz-fernando&nemu_adset=organico"
+        }
+      },
+      "judith-takada-kuroe": {
+        "id": 7708,
+        "params": {
+          "default": "&nemu_source=embaixadores-judith-kuroe&nemu_adset=organico"
+        }
+      },
+      "valeria-goncalves-da-rocha-varotto": {
+        "id": 7634,
+        "params": {
+          "default": "&nemu_source=embaixadores-valeria-gonçalves&nemu_adset=organico"
+        }
+      },
+      "maiara-geraldo-klassmann": {
+        "id": 7636,
+        "params": {
+          "default": "&nemu_source=embaixadores-maiara-klassmann&nemu_adset=organico"
+        }
+      },
+      "manoella-marinho-chaves": {
+        "id": 7638,
+        "params": {
+          "default": "&nemu_source=embaixadores-manoella-chaves&nemu_adset=organico"
+        }
+      },
+      "evandro-wilhans-detoni": {
+        "id": 7640,
+        "params": {
+          "default": "&nemu_source=embaixadores-evandro-detoni&nemu_adset=organico"
+        }
+      },
+      "evandro-clayton-de-oliveira": {
+        "id": 7642,
+        "params": {
+          "default": "&nemu_source=embaixadores-evandro-oliveira&nemu_adset=organico"
+        }
+      },
+      "erika-pessalacia-rodrigues-dextro": {
+        "id": 7644,
+        "params": {
+          "default": "&nemu_source=embaixadores-erika-dextro&nemu_adset=organico"
+        }
+      },
+      "nayara-cristina-mendes-golfeti": {
+        "id": 7646,
+        "params": {
+          "default": "&nemu_source=embaixadores-nayara-golfetti&nemu_adset=organico"
+        }
+      },
+      "michell-fernandes-sousa-marcal": {
+        "id": 7648,
+        "params": {
+          "default": "&nemu_source=embaixadores-michell-marçal&nemu_adset=organico"
+        }
+      },
+      "giselle-da-silva-barauna": {
+        "id": 7650,
+        "params": {
+          "default": "&nemu_source=embaixadores-giselle-barauna&nemu_adset=organico"
+        }
+      },
+      "fernanda-silva-guimaraes": {
+        "id": 7652,
+        "params": {
+          "default": "&nemu_source=embaixadores-fernanda-guimaraes&nemu_adset=organico"
+        }
+      },
+      "camila-siqueira": {
+        "id": 7654,
+        "params": {
+          "default": "&nemu_source=embaixadores-camila-siqueira&nemu_adset=organico"
+        }
+      },
+      "joyce-filippo-souza": {
+        "id": 7656,
+        "params": {
+          "default": "&nemu_source=embaixadores-joyce-filippo&nemu_adset=organico"
+        }
+      },
+      "renata-furtuoso-andrade": {
+        "id": 7658,
+        "params": {
+          "default": "&nemu_source=embaixadores-renata-andrade&nemu_adset=organico"
+        }
+      },
+      "ester-emanuela-costa-fernandes": {
+        "id": 7660,
+        "params": {
+          "default": "&nemu_source=embaixadores-ester-costa&nemu_adset=organico"
+        }
+      },
+      "waleska-oliveira-de-souza-santos": {
+        "id": 7662,
+        "params": {
+          "default": "&nemu_source=embaixadores-waleska-souza&nemu_adset=organico"
+        }
+      },
+      "marilyn-de-oliveira-souza": {
+        "id": 7664,
+        "params": {
+          "default": "&nemu_source=embaixadores-marilyn-oliveira&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "Live Embaixadores": {
+    "rigolim": {
+      "claudineia-panosso-caris": {
+        "id": 7670,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-claudia-panosso&nemu_adset=organico"
+        }
+      },
+      "sara-de-oliveira-silva": {
+        "id": 7668,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-sara-oliveira&nemu_adset=organico"
+        }
+      },
+      "luiz-fernando-de-souza-silva": {
+        "id": 7672,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-luiz-fernando&nemu_adset=organico"
+        }
+      },
+      "judith-takada-kuroe": {
+        "id": 7674,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-judith-kuroe&nemu_adset=organico"
+        }
+      },
+      "valeria-goncalves-da-rocha-varotto": {
+        "id": 7676,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-valeria-gonçalves&nemu_adset=organico"
+        }
+      },
+      "maiara-geraldo-klassmann": {
+        "id": 7678,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-maiara-klassmann&nemu_adset=organico"
+        }
+      },
+      "manoella-marinho-chaves": {
+        "id": 7680,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-manoella-chaves&nemu_adset=organico"
+        }
+      },
+      "evandro-wilhans-detoni": {
+        "id": 7682,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-evandro-detoni&nemu_adset=organico"
+        }
+      },
+      "evandro-clayton-de-oliveira": {
+        "id": 7684,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-evandro-oliveira&nemu_adset=organico"
+        }
+      },
+      "erika-pessalacia-rodrigues-dextro": {
+        "id": 7686,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-erika-dextro&nemu_adset=organico"
+        }
+      },
+      "nayara-cristina-mendes-golfeti": {
+        "id": 7688,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-nayara-golfetti&nemu_adset=organico"
+        }
+      },
+      "michell-fernandes-sousa-marcal": {
+        "id": 7690,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-michell-marçal&nemu_adset=organico"
+        }
+      },
+      "giselle-da-silva-barauna": {
+        "id": 7692,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-giselle-barauna&nemu_adset=organico"
+        }
+      },
+      "fernanda-silva-guimaraes": {
+        "id": 7694,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-fernanda-guimaraes&nemu_adset=organico"
+        }
+      },
+      "camila-siqueira": {
+        "id": 7696,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-camila-siqueira&nemu_adset=organico"
+        }
+      },
+      "joyce-filippo-souza": {
+        "id": 7698,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-joyce-filippo&nemu_adset=organico"
+        }
+      },
+      "renata-furtuoso-andrade": {
+        "id": 7700,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-renata-andrade&nemu_adset=organico"
+        }
+      },
+      "ester-emanuela-costa-fernandes": {
+        "id": 7702,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-ester-costa&nemu_adset=organico"
+        }
+      },
+      "waleska-oliveira-de-souza-santos": {
+        "id": 7704,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-waleska-souza&nemu_adset=organico"
+        }
+      },
+      "marilyn-de-oliveira-souza": {
+        "id": 7706,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-marilyn-oliveira&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "Black Friday": {
     "rigolim": {
       "instagram": {
         "id": 7502,
@@ -359,255 +607,7 @@
       }
     }
   },
-  "rotina-embaixadores": {
-    "rigolim": {
-      "claudineia-panosso": {
-        "id": 7628,
-        "params": {
-          "default": "&nemu_source=embaixadores-claudia-panosso&nemu_adset=organico"
-        }
-      },
-      "sara-de-oliveira-silva": {
-        "id": 7630,
-        "params": {
-          "default": "&nemu_source=black-friday-embaixadores-sara-oliveira&nemu_adset=organico"
-        }
-      },
-      "luiz-fernando-de-souza-silva": {
-        "id": 7632,
-        "params": {
-          "default": "&nemu_source=embaixadores-luiz-fernando&nemu_adset=organico"
-        }
-      },
-      "judith-takada-kuroe": {
-        "id": 7708,
-        "params": {
-          "default": "&nemu_source=embaixadores-judith-kuroe&nemu_adset=organico"
-        }
-      },
-      "valeria-goncalves-da-rocha-varotto": {
-        "id": 7634,
-        "params": {
-          "default": "&nemu_source=embaixadores-valeria-gonçalves&nemu_adset=organico"
-        }
-      },
-      "maiara-geraldo-klassmann": {
-        "id": 7636,
-        "params": {
-          "default": "&nemu_source=embaixadores-maiara-klassmann&nemu_adset=organico"
-        }
-      },
-      "manoella-marinho-chaves": {
-        "id": 7638,
-        "params": {
-          "default": "&nemu_source=embaixadores-manoella-chaves&nemu_adset=organico"
-        }
-      },
-      "evandro-wilhans-detoni": {
-        "id": 7640,
-        "params": {
-          "default": "&nemu_source=embaixadores-evandro-detoni&nemu_adset=organico"
-        }
-      },
-      "evandro-clayton-de-oliveira": {
-        "id": 7642,
-        "params": {
-          "default": "&nemu_source=embaixadores-evandro-oliveira&nemu_adset=organico"
-        }
-      },
-      "erika-pessalacia-rodrigues-dextro": {
-        "id": 7644,
-        "params": {
-          "default": "&nemu_source=embaixadores-erika-dextro&nemu_adset=organico"
-        }
-      },
-      "nayara-cristina-mendes-golfeti": {
-        "id": 7646,
-        "params": {
-          "default": "&nemu_source=embaixadores-nayara-golfetti&nemu_adset=organico"
-        }
-      },
-      "michell-fernandes-sousa-marcal": {
-        "id": 7648,
-        "params": {
-          "default": "&nemu_source=embaixadores-michell-marçal&nemu_adset=organico"
-        }
-      },
-      "giselle-da-silva-barauna": {
-        "id": 7650,
-        "params": {
-          "default": "&nemu_source=embaixadores-giselle-barauna&nemu_adset=organico"
-        }
-      },
-      "fernanda-silva-guimaraes": {
-        "id": 7652,
-        "params": {
-          "default": "&nemu_source=embaixadores-fernanda-guimaraes&nemu_adset=organico"
-        }
-      },
-      "camila-siqueira": {
-        "id": 7654,
-        "params": {
-          "default": "&nemu_source=embaixadores-camila-siqueira&nemu_adset=organico"
-        }
-      },
-      "joyce-filippo-souza": {
-        "id": 7656,
-        "params": {
-          "default": "&nemu_source=embaixadores-joyce-filippo&nemu_adset=organico"
-        }
-      },
-      "renata-furtuoso-andrade": {
-        "id": 7658,
-        "params": {
-          "default": "&nemu_source=embaixadores-renata-andrade&nemu_adset=organico"
-        }
-      },
-      "ester-emanuela-costa-fernandes": {
-        "id": 7660,
-        "params": {
-          "default": "&nemu_source=embaixadores-ester-costa&nemu_adset=organico"
-        }
-      },
-      "waleska-oliveira-de-souza-santos": {
-        "id": 7662,
-        "params": {
-          "default": "&nemu_source=embaixadores-waleska-souza&nemu_adset=organico"
-        }
-      },
-      "marilyn-de-oliveira-souza": {
-        "id": 7664,
-        "params": {
-          "default": "&nemu_source=embaixadores-marilyn-oliveira&nemu_adset=organico"
-        }
-      }
-    }
-  },
-  "live-embaixadores": {
-    "rigolim": {
-      "claudineia-panosso-caris": {
-        "id": 7670,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-claudia-panosso&nemu_adset=organico"
-        }
-      },
-      "sara-de-oliveira-silva": {
-        "id": 7668,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-sara-oliveira&nemu_adset=organico"
-        }
-      },
-      "luiz-fernando-de-souza-silva": {
-        "id": 7672,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-luiz-fernando&nemu_adset=organico"
-        }
-      },
-      "judith-takada-kuroe": {
-        "id": 7674,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-judith-kuroe&nemu_adset=organico"
-        }
-      },
-      "valeria-goncalves-da-rocha-varotto": {
-        "id": 7676,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-valeria-gonçalves&nemu_adset=organico"
-        }
-      },
-      "maiara-geraldo-klassmann": {
-        "id": 7678,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-maiara-klassmann&nemu_adset=organico"
-        }
-      },
-      "manoella-marinho-chaves": {
-        "id": 7680,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-manoella-chaves&nemu_adset=organico"
-        }
-      },
-      "evandro-wilhans-detoni": {
-        "id": 7682,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-evandro-detoni&nemu_adset=organico"
-        }
-      },
-      "evandro-clayton-de-oliveira": {
-        "id": 7684,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-evandro-oliveira&nemu_adset=organico"
-        }
-      },
-      "erika-pessalacia-rodrigues-dextro": {
-        "id": 7686,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-erika-dextro&nemu_adset=organico"
-        }
-      },
-      "nayara-cristina-mendes-golfeti": {
-        "id": 7688,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-nayara-golfetti&nemu_adset=organico"
-        }
-      },
-      "michell-fernandes-sousa-marcal": {
-        "id": 7690,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-michell-marçal&nemu_adset=organico"
-        }
-      },
-      "giselle-da-silva-barauna": {
-        "id": 7692,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-giselle-barauna&nemu_adset=organico"
-        }
-      },
-      "fernanda-silva-guimaraes": {
-        "id": 7694,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-fernanda-guimaraes&nemu_adset=organico"
-        }
-      },
-      "camila-siqueira": {
-        "id": 7696,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-camila-siqueira&nemu_adset=organico"
-        }
-      },
-      "joyce-filippo-souza": {
-        "id": 7698,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-joyce-filippo&nemu_adset=organico"
-        }
-      },
-      "renata-furtuoso-andrade": {
-        "id": 7700,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-renata-andrade&nemu_adset=organico"
-        }
-      },
-      "ester-emanuela-costa-fernandes": {
-        "id": 7702,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-ester-costa&nemu_adset=organico"
-        }
-      },
-      "waleska-oliveira-de-souza-santos": {
-        "id": 7704,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-waleska-souza&nemu_adset=organico"
-        }
-      },
-      "marilyn-de-oliveira-souza": {
-        "id": 7706,
-        "params": {
-          "default": "&nemu_source=live-embaixadores-marilyn-oliveira&nemu_adset=organico"
-        }
-      }
-    }
-  },
-  "black-friday-embaixadores": {
+  "Black Friday Embaixadores": {
     "rigolim": {
       "claudineia-panosso-caris": {
         "id": 7588,
@@ -877,6 +877,174 @@
         "id": 7930,
         "params": {
           "default": "&nemu_source=cyber-monday-whatsapp_leticia&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "Natal ": {
+    "Rigolim": {
+      "Tráfego - Meta Ads": {
+        "id": 7932,
+        "params": {
+          "default": "&utm_source=facebook&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium=cpc&utm_content={{ad.name}}|{{ad.id}}&utm_term={{adset.name}}|{{adset.id}}&nemu_source=facebook&nemu_campaign={{campaign.name}}|{{campaign.id}}&nemu_adset={{adset.name}}|{{adset.id}}&nemu_content={{ad.name}}|{{ad.id}}\n"
+        }
+      },
+      "Tráfego - Google Ads": {
+        "id": 7934,
+        "params": {
+          "default": ""
+        }
+      },
+      "Instagram - Link Bio": {
+        "id": 7936,
+        "params": {
+          "default": "&nemu_source=natal-link_bio_ig_rhc&nemu_adset=organico\n"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 7938,
+        "params": {
+          "default": "&nemu_source=natal-link_stories_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 7940,
+        "params": {
+          "default": "&nemu_source=natal-link_canal_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 7942,
+        "params": {
+          "default": "&nemu_source=natal-link_dm_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 7944,
+        "params": {
+          "default": "&nemu_source=natal-facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "TikTok ": {
+        "id": 7946,
+        "params": {
+          "default": "&cyber-monday-nemu_source=natal-tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 7948,
+        "params": {
+          "default": "&nemu_source=natal-pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 7950,
+        "params": {
+          "default": "&nemu_source=natal-youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 7952,
+        "params": {
+          "default": "&nemu_source=natal-linkedin_rhc&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 7954,
+        "params": {
+          "default": "&nemu_source=natal-aplicativo_rhc&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 7956,
+        "params": {
+          "default": "&nemu_source=natal-grupo-vip_rigolovers_rhc&nemu_adset=organico"
+        }
+      },
+      "WhatsApp": {
+        "id": 7958,
+        "params": {
+          "default": "&nemu_source=natal-whatsapp-rigolim&nemu_adset=organico"
+        }
+      },
+      "Embaixadores": {
+        "id": 7984,
+        "params": {
+          "default": "&nemu_source=natal-embaixadores&nemu_adset=organico"
+        }
+      },
+      "Experts": {
+        "id": 7986,
+        "params": {
+          "default": "&nemu_source=natal-experts&nemu_adset=organico"
+        }
+      }
+    },
+    "Leticia ": {
+      "Instagram - Link Bio": {
+        "id": 7960,
+        "params": {
+          "default": "&nemu_source=natal-link_bio_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories ": {
+        "id": 7962,
+        "params": {
+          "default": "&nemu_source=natal-link_stories_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 7964,
+        "params": {
+          "default": "&nemu_source=natal-link_canal_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 7966,
+        "params": {
+          "default": "&nemu_source=natal-link_dm_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 7968,
+        "params": {
+          "default": "&nemu_source=natal-facebook_leticia&nemu_adset=organico"
+        }
+      },
+      "TikTok": {
+        "id": 7970,
+        "params": {
+          "default": "&nemu_source=natal-tiktok_leticia&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 7972,
+        "params": {
+          "default": "&nemu_source=natal-pinterest_leticia&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 7974,
+        "params": {
+          "default": "&nemu_source=natal-youtube_leticia&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 7976,
+        "params": {
+          "default": "&nemu_source=natal-linkedin_leticia&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 7980,
+        "params": {
+          "default": "&nemu_source=natal-grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "WhatsApp ": {
+        "id": 7982,
+        "params": {
+          "default": "&nemu_source=natal-whatsapp_leticia&nemu_adset=organico"
         }
       }
     }
