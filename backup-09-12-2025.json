@@ -1,0 +1,885 @@
+{
+  "rotina": {
+    "rigolim": {
+      "instagram": {
+        "id": 7120,
+        "params": {
+          "link_bio": "&nemu_source=link_bio_instagram_rhc&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_rhc&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_rhc&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_rhc&nemu_adset=organico"
+        }
+      },
+      "facebook": {
+        "id": 7460,
+        "params": {
+          "default": "&nemu_source=facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "tiktok": {
+        "id": 7462,
+        "params": {
+          "default": "&nemu_source=tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "pinterest": {
+        "id": 7464,
+        "params": {
+          "default": "&nemu_source=pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "youtube": {
+        "id": 7466,
+        "params": {
+          "default": "&nemu_source=youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "linkedin": {
+        "id": 7468,
+        "params": {
+          "default": "&nemu_source=linkedin_rhc&nemu_adset=organico"
+        }
+      },
+      "grupo-vip": {
+        "id": 7562,
+        "params": {
+          "default": "&nemu_source=grupo-vip_rigolover_rhc&nemu_adset=organico"
+        }
+      },
+      "aplicativo": {
+        "id": 7568,
+        "params": {
+          "default": "&nemu_source=aplicativo_rhc&nemu_adset=organico"
+        }
+      },
+      "trafego - meta ads": {
+        "id": 7572,
+        "params": {
+          "default": "&utm_source=facebook&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium=cpc&utm_content={{ad.name}}|{{ad.id}}&utm_term={{adset.name}}|{{adset.id}}&nemu_source=facebook&nemu_campaign={{campaign.name}}|{{campaign.id}}&nemu_adset={{adset.name}}|{{adset.id}}&nemu_content={{ad.name}}|{{ad.id}}"
+        }
+      },
+      "trafego - google ads": {
+        "id": 7078,
+        "params": {
+          "default": ""
+        }
+      },
+      "whatsapp": {
+        "id": 7584,
+        "params": {
+          "default": "&nemu_source=whatsapp-rigolim&nemu_adset=organico"
+        }
+      }
+    },
+    "leticia": {
+      "instagram": {
+        "id": 7002,
+        "params": {
+          "link_bio": "&nemu_source=link_bio_instagram_lr&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_lr&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_lr&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_lr&nemu_adset=organico"
+        }
+      },
+      "facebook": {
+        "id": 7450,
+        "params": {
+          "default": "&nemu_source=facebook_lr&nemu_adset=organico"
+        }
+      },
+      "tiktok": {
+        "id": 7452,
+        "params": {
+          "default": "&nemu_source=tiktok_lr&nemu_adset=organico"
+        }
+      },
+      "pinterest": {
+        "id": 7454,
+        "params": {
+          "default": "&nemu_source=pinterest_lr&nemu_adset=organico"
+        }
+      },
+      "youtube": {
+        "id": 7456,
+        "params": {
+          "default": "&nemu_source=youtube_lr&nemu_adset=organico"
+        }
+      },
+      "linkedin": {
+        "id": 7458,
+        "params": {
+          "default": "&nemu_source=linkedin_lr&nemu_adset=organico"
+        }
+      },
+      "grupo-vip": {
+        "id": 7564,
+        "params": {
+          "default": "&nemu_source=grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "whatsapp": {
+        "id": 7580,
+        "params": {
+          "default": "&nemu_source=whatsapp_leticia&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "lives": {
+    "rigolim": {
+      "instagram": {
+        "id": 7534,
+        "params": {
+          "live": "&nemu_source=live_instagram_rhc&nemu_adset=organico"
+        }
+      },
+      "facebook": {
+        "id": 7536,
+        "params": {
+          "default": "&nemu_source=live_facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "tiktok": {
+        "id": 7538,
+        "params": {
+          "default": "&nemu_source=live_tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "pinterest": {
+        "id": 7540,
+        "params": {
+          "default": "&nemu_source=live_pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "youtube": {
+        "id": 7542,
+        "params": {
+          "default": "&nemu_source=live_youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "linkedin": {
+        "id": 7544,
+        "params": {
+          "default": "&nemu_source=live_linkedin_rhc&nemu_adset=organico"
+        }
+      },
+      "embaixadores": {
+        "id": 7558,
+        "params": {
+          "default": "&nemu_source=embaixadores_rhc&nemu_adset=organico"
+        }
+      },
+      "experts": {
+        "id": 7560,
+        "params": {
+          "default": "&nemu_source=experts_rhc&nemu_adset=organico"
+        }
+      }
+    },
+    "leticia": {
+      "instagram": {
+        "id": 7546,
+        "params": {
+          "live": "&nemu_source=live_instagram_lr&nemu_adset=organico"
+        }
+      },
+      "facebook": {
+        "id": 7548,
+        "params": {
+          "default": "&nemu_source=live_facebook_lr&nemu_adset=organico"
+        }
+      },
+      "tiktok": {
+        "id": 7550,
+        "params": {
+          "default": "&nemu_source=live_tiktok_lr&nemu_adset=organico"
+        }
+      },
+      "pinterest": {
+        "id": 7552,
+        "params": {
+          "default": "&nemu_source=live_pinterest_lr&nemu_adset=organico"
+        }
+      },
+      "youtube": {
+        "id": 7554,
+        "params": {
+          "default": "&nemu_source=live_youtube_lr&nemu_adset=organico"
+        }
+      },
+      "linkedin": {
+        "id": 7556,
+        "params": {
+          "default": "&nemu_source=live_linkedin_lr&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "black-friday": {
+    "rigolim": {
+      "instagram": {
+        "id": 7502,
+        "params": {
+          "link_bio": "&nemu_source=link_bio_instagram_rhc_black_friday&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_rhc_black_friday&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_rhc_black_friday&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "facebook": {
+        "id": 7504,
+        "params": {
+          "default": "&nemu_source=facebook_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "tiktok": {
+        "id": 7506,
+        "params": {
+          "default": "&nemu_source=tiktok_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "pinterest": {
+        "id": 7508,
+        "params": {
+          "default": "&nemu_source=pinterest_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "youtube": {
+        "id": 7510,
+        "params": {
+          "default": "&nemu_source=youtube_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "linkedin": {
+        "id": 7512,
+        "params": {
+          "default": "&nemu_source=linkedin_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "grupo-vip": {
+        "id": 7526,
+        "params": {
+          "default": "&nemu_source=grupo-vip_rigolover_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "embaixadores": {
+        "id": 7530,
+        "params": {
+          "default": "&nemu_source=embaixadores_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "experts": {
+        "id": 7532,
+        "params": {
+          "default": "&nemu_source=experts_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "aplicativo": {
+        "id": 7566,
+        "params": {
+          "default": "&nemu_source=aplicativo_rhc_black_friday&nemu_adset=organico"
+        }
+      },
+      "trafego - meta ads": {
+        "id": 7570,
+        "params": {
+          "default": "&utm_source=facebook&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium=cpc&utm_content={{ad.name}}|{{ad.id}}&utm_term={{adset.name}}|{{adset.id}}&nemu_source=facebook&nemu_campaign={{campaign.name}}|{{campaign.id}}&nemu_adset={{adset.name}}|{{adset.id}}&nemu_content={{ad.name}}|{{ad.id}}"
+        }
+      },
+      "trafego - google ads": {
+        "id": 7574,
+        "params": {
+          "default": ""
+        }
+      },
+      "e-mail marketing - edrone": {
+        "id": 7576,
+        "params": {
+          "default": "&nemu_source=email-mkt-edrone&nemu_adset=organico"
+        }
+      },
+      "whatsapp": {
+        "id": 7586,
+        "params": {
+          "default": "&nemu_source=whatsapp-black-rigolim&nemu_adset=organico"
+        }
+      }
+    },
+    "leticia": {
+      "instagram": {
+        "id": 7514,
+        "params": {
+          "link_bio": "&nemu_source=link_bio_instagram_lr_black_friday&nemu_adset=organico",
+          "stories": "&nemu_source=link_stories_instagram_lr_black_friday&nemu_adset=organico",
+          "canal": "&nemu_source=link_canal_instagram_lr_black_friday&nemu_adset=organico",
+          "direct": "&nemu_source=link_dm_instagram_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "facebook": {
+        "id": 7516,
+        "params": {
+          "default": "&nemu_source=facebook_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "tiktok": {
+        "id": 7518,
+        "params": {
+          "default": "&nemu_source=tiktok_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "pinterest": {
+        "id": 7520,
+        "params": {
+          "default": "&nemu_source=pinterest_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "youtube": {
+        "id": 7522,
+        "params": {
+          "default": "&nemu_source=youtube_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "linkedin": {
+        "id": 7524,
+        "params": {
+          "default": "&nemu_source=linkedin_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "grupo-vip": {
+        "id": 7528,
+        "params": {
+          "default": "&nemu_source=grupo-vip_leticia_lr_black_friday&nemu_adset=organico"
+        }
+      },
+      "whatsapp": {
+        "id": 7582,
+        "params": {
+          "default": "&nemu_source=whatsapp_black_leticia&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "rotina-embaixadores": {
+    "rigolim": {
+      "claudineia-panosso": {
+        "id": 7628,
+        "params": {
+          "default": "&nemu_source=embaixadores-claudia-panosso&nemu_adset=organico"
+        }
+      },
+      "sara-de-oliveira-silva": {
+        "id": 7630,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-sara-oliveira&nemu_adset=organico"
+        }
+      },
+      "luiz-fernando-de-souza-silva": {
+        "id": 7632,
+        "params": {
+          "default": "&nemu_source=embaixadores-luiz-fernando&nemu_adset=organico"
+        }
+      },
+      "judith-takada-kuroe": {
+        "id": 7708,
+        "params": {
+          "default": "&nemu_source=embaixadores-judith-kuroe&nemu_adset=organico"
+        }
+      },
+      "valeria-goncalves-da-rocha-varotto": {
+        "id": 7634,
+        "params": {
+          "default": "&nemu_source=embaixadores-valeria-gonçalves&nemu_adset=organico"
+        }
+      },
+      "maiara-geraldo-klassmann": {
+        "id": 7636,
+        "params": {
+          "default": "&nemu_source=embaixadores-maiara-klassmann&nemu_adset=organico"
+        }
+      },
+      "manoella-marinho-chaves": {
+        "id": 7638,
+        "params": {
+          "default": "&nemu_source=embaixadores-manoella-chaves&nemu_adset=organico"
+        }
+      },
+      "evandro-wilhans-detoni": {
+        "id": 7640,
+        "params": {
+          "default": "&nemu_source=embaixadores-evandro-detoni&nemu_adset=organico"
+        }
+      },
+      "evandro-clayton-de-oliveira": {
+        "id": 7642,
+        "params": {
+          "default": "&nemu_source=embaixadores-evandro-oliveira&nemu_adset=organico"
+        }
+      },
+      "erika-pessalacia-rodrigues-dextro": {
+        "id": 7644,
+        "params": {
+          "default": "&nemu_source=embaixadores-erika-dextro&nemu_adset=organico"
+        }
+      },
+      "nayara-cristina-mendes-golfeti": {
+        "id": 7646,
+        "params": {
+          "default": "&nemu_source=embaixadores-nayara-golfetti&nemu_adset=organico"
+        }
+      },
+      "michell-fernandes-sousa-marcal": {
+        "id": 7648,
+        "params": {
+          "default": "&nemu_source=embaixadores-michell-marçal&nemu_adset=organico"
+        }
+      },
+      "giselle-da-silva-barauna": {
+        "id": 7650,
+        "params": {
+          "default": "&nemu_source=embaixadores-giselle-barauna&nemu_adset=organico"
+        }
+      },
+      "fernanda-silva-guimaraes": {
+        "id": 7652,
+        "params": {
+          "default": "&nemu_source=embaixadores-fernanda-guimaraes&nemu_adset=organico"
+        }
+      },
+      "camila-siqueira": {
+        "id": 7654,
+        "params": {
+          "default": "&nemu_source=embaixadores-camila-siqueira&nemu_adset=organico"
+        }
+      },
+      "joyce-filippo-souza": {
+        "id": 7656,
+        "params": {
+          "default": "&nemu_source=embaixadores-joyce-filippo&nemu_adset=organico"
+        }
+      },
+      "renata-furtuoso-andrade": {
+        "id": 7658,
+        "params": {
+          "default": "&nemu_source=embaixadores-renata-andrade&nemu_adset=organico"
+        }
+      },
+      "ester-emanuela-costa-fernandes": {
+        "id": 7660,
+        "params": {
+          "default": "&nemu_source=embaixadores-ester-costa&nemu_adset=organico"
+        }
+      },
+      "waleska-oliveira-de-souza-santos": {
+        "id": 7662,
+        "params": {
+          "default": "&nemu_source=embaixadores-waleska-souza&nemu_adset=organico"
+        }
+      },
+      "marilyn-de-oliveira-souza": {
+        "id": 7664,
+        "params": {
+          "default": "&nemu_source=embaixadores-marilyn-oliveira&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "live-embaixadores": {
+    "rigolim": {
+      "claudineia-panosso-caris": {
+        "id": 7670,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-claudia-panosso&nemu_adset=organico"
+        }
+      },
+      "sara-de-oliveira-silva": {
+        "id": 7668,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-sara-oliveira&nemu_adset=organico"
+        }
+      },
+      "luiz-fernando-de-souza-silva": {
+        "id": 7672,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-luiz-fernando&nemu_adset=organico"
+        }
+      },
+      "judith-takada-kuroe": {
+        "id": 7674,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-judith-kuroe&nemu_adset=organico"
+        }
+      },
+      "valeria-goncalves-da-rocha-varotto": {
+        "id": 7676,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-valeria-gonçalves&nemu_adset=organico"
+        }
+      },
+      "maiara-geraldo-klassmann": {
+        "id": 7678,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-maiara-klassmann&nemu_adset=organico"
+        }
+      },
+      "manoella-marinho-chaves": {
+        "id": 7680,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-manoella-chaves&nemu_adset=organico"
+        }
+      },
+      "evandro-wilhans-detoni": {
+        "id": 7682,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-evandro-detoni&nemu_adset=organico"
+        }
+      },
+      "evandro-clayton-de-oliveira": {
+        "id": 7684,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-evandro-oliveira&nemu_adset=organico"
+        }
+      },
+      "erika-pessalacia-rodrigues-dextro": {
+        "id": 7686,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-erika-dextro&nemu_adset=organico"
+        }
+      },
+      "nayara-cristina-mendes-golfeti": {
+        "id": 7688,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-nayara-golfetti&nemu_adset=organico"
+        }
+      },
+      "michell-fernandes-sousa-marcal": {
+        "id": 7690,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-michell-marçal&nemu_adset=organico"
+        }
+      },
+      "giselle-da-silva-barauna": {
+        "id": 7692,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-giselle-barauna&nemu_adset=organico"
+        }
+      },
+      "fernanda-silva-guimaraes": {
+        "id": 7694,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-fernanda-guimaraes&nemu_adset=organico"
+        }
+      },
+      "camila-siqueira": {
+        "id": 7696,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-camila-siqueira&nemu_adset=organico"
+        }
+      },
+      "joyce-filippo-souza": {
+        "id": 7698,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-joyce-filippo&nemu_adset=organico"
+        }
+      },
+      "renata-furtuoso-andrade": {
+        "id": 7700,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-renata-andrade&nemu_adset=organico"
+        }
+      },
+      "ester-emanuela-costa-fernandes": {
+        "id": 7702,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-ester-costa&nemu_adset=organico"
+        }
+      },
+      "waleska-oliveira-de-souza-santos": {
+        "id": 7704,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-waleska-souza&nemu_adset=organico"
+        }
+      },
+      "marilyn-de-oliveira-souza": {
+        "id": 7706,
+        "params": {
+          "default": "&nemu_source=live-embaixadores-marilyn-oliveira&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "black-friday-embaixadores": {
+    "rigolim": {
+      "claudineia-panosso-caris": {
+        "id": 7588,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-claudia-panosso&nemu_adset=organico"
+        }
+      },
+      "sara-de-oliveira-silva": {
+        "id": 7590,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-sara-oliveira&nemu_adset=organico"
+        }
+      },
+      "luiz-fernando-de-souza-silva": {
+        "id": 7592,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-luiz-fernando&nemu_adset=organico"
+        }
+      },
+      "judith-takada-kuroe": {
+        "id": 7594,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-judith-kuroe&nemu_adset=organico"
+        }
+      },
+      "valeria-goncalves-da-rocha-varotto": {
+        "id": 7596,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-valeria-gonçalves&nemu_adset=organico"
+        }
+      },
+      "maiara-geraldo-klassmann": {
+        "id": 7598,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-maiara-klassmann&nemu_adset=organico"
+        }
+      },
+      "manoella-marinho-chaves": {
+        "id": 7600,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-manoella-chaves&nemu_adset=organico"
+        }
+      },
+      "evandro-wilhans-detoni": {
+        "id": 7602,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-evandro-detoni&nemu_adset=organico"
+        }
+      },
+      "evandro-clayton-de-oliveira": {
+        "id": 7604,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-evandro-oliveira&nemu_adset=organico"
+        }
+      },
+      "erika-pessalacia-rodrigues-dextro": {
+        "id": 7606,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-erika-dextro&nemu_adset=organico"
+        }
+      },
+      "nayara-cristina-mendes-golfeti": {
+        "id": 7608,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-nayara-golfetti&nemu_adset=organico"
+        }
+      },
+      "michell-fernandes-sousa-marcal": {
+        "id": 7610,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-michell-marçal&nemu_adset=organico"
+        }
+      },
+      "giselle-da-silva-barauna": {
+        "id": 7612,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-giselle-barauna&nemu_adset=organico"
+        }
+      },
+      "fernanda-silva-guimaraes": {
+        "id": 7614,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-fernanda-guimaraes&nemu_adset=organico"
+        }
+      },
+      "camila-siqueira": {
+        "id": 7616,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-camila-siqueira&nemu_adset=organico"
+        }
+      },
+      "joyce-filippo-souza": {
+        "id": 7618,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-joyce-filippo&nemu_adset=organico"
+        }
+      },
+      "renata-furtuoso-andrade": {
+        "id": 7620,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-renata-andrade&nemu_adset=organico"
+        }
+      },
+      "ester-emanuela-costa-fernandes": {
+        "id": 7622,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-ester-costa&nemu_adset=organico"
+        }
+      },
+      "waleska-oliveira-de-souza-santos": {
+        "id": 7624,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-waleska-souza&nemu_adset=organico"
+        }
+      },
+      "marilyn-de-oliveira-souza": {
+        "id": 7626,
+        "params": {
+          "default": "&nemu_source=black-friday-embaixadores-marilyn-oliveira&nemu_adset=organico"
+        }
+      }
+    }
+  },
+  "Cyber Monday ": {
+    "rigolim": {
+      "Instagram - Link Bio": {
+        "id": 7884,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_bio_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 7886,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_stories_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 7888,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_canal_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 7890,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_dm_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 7892,
+        "params": {
+          "default": "&nemu_source=cyber-monday-facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "TikTok ": {
+        "id": 7894,
+        "params": {
+          "default": "&cyber-monday-nemu_source=tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 7896,
+        "params": {
+          "default": "&nemu_source=cyber-monday-pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 7898,
+        "params": {
+          "default": "&nemu_source=cyber-monday-youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 7900,
+        "params": {
+          "default": "&nemu_source=cyber-monday-linkedin_rhc&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 7902,
+        "params": {
+          "default": "&nemu_source=cyber-monday-aplicativo_rhc&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 7904,
+        "params": {
+          "default": "&nemu_source=cyber-monday-grupo-vip_rigolovers_rhc&nemu_adset=organico"
+        }
+      },
+      "WhatsApp": {
+        "id": 7906,
+        "params": {
+          "default": "&nemu_source=cyber-monday-whatsapp-rigolim&nemu_adset=organico"
+        }
+      }
+    },
+    "Leticia ": {
+      "Instagram - Link Bio": {
+        "id": 7908,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_bio_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories ": {
+        "id": 7910,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_stories_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 7912,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_canal_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 7914,
+        "params": {
+          "default": "&nemu_source=cyber-monday-link_dm_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 7916,
+        "params": {
+          "default": "&nemu_source=cyber-monday-facebook_leticia&nemu_adset=organico"
+        }
+      },
+      "TikTok": {
+        "id": 7918,
+        "params": {
+          "default": "&nemu_source=cyber-monday-tiktok_leticia&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 7920,
+        "params": {
+          "default": "&nemu_source=cyber-monday-pinterest_leticia&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 7922,
+        "params": {
+          "default": "&nemu_source=cyber-monday-youtube_leticia&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 7924,
+        "params": {
+          "default": "&nemu_source=cyber-monday-linkedin_leticia&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 7926,
+        "params": {
+          "default": "&nemu_source=cyber-monday-aplicativo_leticia&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 7928,
+        "params": {
+          "default": "&nemu_source=cyber-monday-grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "WhatsApp ": {
+        "id": 7930,
+        "params": {
+          "default": "&nemu_source=cyber-monday-whatsapp_leticia&nemu_adset=organico"
+        }
+      }
+    }
+  }
+}
+
