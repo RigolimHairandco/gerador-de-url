@@ -1048,5 +1048,173 @@
         }
       }
     }
+  },
+  "Compre e Ganhe": {
+    "Rigolim": {
+      "Tráfego - Meta Ads": {
+        "id": 7992,
+        "params": {
+          "default": "&utm_source=facebook&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium=cpc&utm_content={{ad.name}}|{{ad.id}}&utm_term={{adset.name}}|{{adset.id}}&nemu_source=facebook&nemu_campaign={{campaign.name}}|{{campaign.id}}&nemu_adset={{adset.name}}|{{adset.id}}&nemu_content={{ad.name}}|{{ad.id}}\n"
+        }
+      },
+      "Tráfego - Google Ads": {
+        "id": 7994,
+        "params": {
+          "default": ""
+        }
+      },
+      "Instagram - Link Bio": {
+        "id": 7996,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe_bio_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 7998,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe_stories_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 8000,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-link_canal_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 8002,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-link_dm_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 8004,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "TikTok ": {
+        "id": 8006,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 8008,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 8010,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 8012,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-linkedin_rhc&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 8014,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-aplicativo_rhc&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 8016,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-grupo-vip_rigolovers_rhc&nemu_adset=organico"
+        }
+      },
+      "WhatsApp": {
+        "id": 8018,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-whatsapp-rigolim&nemu_adset=organico"
+        }
+      },
+      "Embaixadores": {
+        "id": 8044,
+        "params": {
+          "default": " &nemu_source= compre-e-ganhe-embaixadores&nemu_adset=organico"
+        }
+      },
+      "Experts": {
+        "id": 8046,
+        "params": {
+          "default": "&nemu_source= compre-e-ganhe-experts&nemu_adset=organico"
+        }
+      }
+    },
+    "Leticia ": {
+      "Instagram - Link Bio": {
+        "id": 8020,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-link_bio_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories ": {
+        "id": 8022,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-link_stories_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 8024,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-link_canal_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 8026,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-link_dm_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 8028,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-facebook_leticia&nemu_adset=organico"
+        }
+      },
+      "TikTok": {
+        "id": 8030,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-tiktok_leticia&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 8032,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-pinterest_leticia&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 8034,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-youtube_leticia&nemu_adset=organico"
+        }
+      },
+      "Linkedin ": {
+        "id": 8036,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-linkedin_leticia&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 8040,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "WhatsApp ": {
+        "id": 8042,
+        "params": {
+          "default": "&nemu_source=compre-e-ganhe-whatsapp_leticia&nemu_adset=organico"
+        }
+      }
+    }
   }
 }
