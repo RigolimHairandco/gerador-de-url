@@ -1,13 +1,28 @@
 {
   "Rotina": {
     "rigolim": {
-      "instagram": {
-        "id": 7120,
+      "Instagram - Link Bio": {
+        "id": 8048,
         "params": {
-          "link_bio": "&nemu_source=link_bio_instagram_rhc&nemu_adset=organico",
-          "stories": "&nemu_source=link_stories_instagram_rhc&nemu_adset=organico",
-          "canal": "&nemu_source=link_canal_instagram_rhc&nemu_adset=organico",
-          "direct": "&nemu_source=link_dm_instagram_rhc&nemu_adset=organico"
+          "default": "&nemu_source=link_bio_instagram_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 8050,
+        "params": {
+          "default": "&nemu_source=link_stories_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 8052,
+        "params": {
+          "default": "&nemu_source=link_canal_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 8054,
+        "params": {
+          "default": "&nemu_source=link_dm_ig_rhc&nemu_adset=organico"
         }
       },
       "facebook": {
@@ -72,13 +87,28 @@
       }
     },
     "leticia": {
-      "instagram": {
-        "id": 7002,
+      "Instagram - Link Bio ": {
+        "id": 8056,
         "params": {
-          "link_bio": "&nemu_source=link_bio_instagram_lr&nemu_adset=organico",
-          "stories": "&nemu_source=link_stories_instagram_lr&nemu_adset=organico",
-          "canal": "&nemu_source=link_canal_instagram_lr&nemu_adset=organico",
-          "direct": "&nemu_source=link_dm_instagram_lr&nemu_adset=organico"
+          "default": "&nemu_source=link_bio_ig_lr&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 8058,
+        "params": {
+          "default": "&nemu_source=link_stories_ig_lr&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 8060,
+        "params": {
+          "default": "&nemu_source=link_canal_ig_lr&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 8062,
+        "params": {
+          "default": "&nemu_source=link_dm_ig_lr&nemu_adset=organico"
         }
       },
       "facebook": {
