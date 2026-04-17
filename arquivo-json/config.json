@@ -1408,5 +1408,143 @@
         }
       }
     }
+  },
+  "Lançamento - Volumizer": {
+    "Rigolim": {
+      "Instagram - Link Bio": {
+        "id": 8928,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer_bio_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories": {
+        "id": 8930,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer_stories_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 8932,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-link_canal_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 8934,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-link_dm_ig_rhc&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 8936,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-facebook_rhc&nemu_adset=organico"
+        }
+      },
+      "TikTok ": {
+        "id": 8938,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-tiktok_rhc&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 8940,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-pinterest_rhc&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 8942,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-youtube_rhc&nemu_adset=organico"
+        }
+      },
+      "Aplicativo ": {
+        "id": 8944,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-aplicativo_rhc&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 8946,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-grupo-vip_rigolovers_rhc&nemu_adset=organico"
+        }
+      },
+      "Embaixadores": {
+        "id": 8948,
+        "params": {
+          "default": " &nemu_source=lancamento_volumizer-embaixadores&nemu_adset=organico"
+        }
+      },
+      "Experts": {
+        "id": 8950,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer&nemu_adset=organico"
+        }
+      }
+    },
+    "Leticia ": {
+      "Instagram - Link Bio": {
+        "id": 8952,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-link_bio_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Stories ": {
+        "id": 8954,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-link_stories_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Canal": {
+        "id": 8956,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-link_canal_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Instagram - Direct": {
+        "id": 8958,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-link_dm_ig_leticia&nemu_adset=organico"
+        }
+      },
+      "Facebook": {
+        "id": 8960,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-facebook_leticia&nemu_adset=organico"
+        }
+      },
+      "TikTok": {
+        "id": 8962,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-tiktok_leticia&nemu_adset=organico"
+        }
+      },
+      "Pinterest ": {
+        "id": 8964,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-pinterest_leticia&nemu_adset=organico"
+        }
+      },
+      "Youtube ": {
+        "id": 8966,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-youtube_leticia&nemu_adset=organico"
+        }
+      },
+      "Grupo Vip": {
+        "id": 8968,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "WhatsApp ": {
+        "id": 8969,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer-whatsapp_leticia&nemu_adset=organico"
+        }
+      }
+    }
   }
 }
