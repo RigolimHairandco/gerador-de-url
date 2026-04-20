@@ -96,6 +96,12 @@
         "params": {
           "default": "&nemu_source=whatsapp-rigolim&nemu_adset=disparo-whatsapp"
         }
+      },
+      "e-mail ": {
+        "id": 8988,
+        "params": {
+          "default": "&nemu_source=email-rigolim&nemu_adset=disparo-email "
+        }
       }
     },
     "leticia": {
@@ -1474,13 +1480,19 @@
       "Embaixadores": {
         "id": 8948,
         "params": {
-          "default": " &nemu_source=lancamento_volumizer-embaixadores&nemu_adset=organico"
+          "default": " &nemu_source=lancamento_volumizer_embaixadores&nemu_adset=organico"
         }
       },
       "Experts": {
         "id": 8950,
         "params": {
-          "default": "&nemu_source=lancamento_volumizer&nemu_adset=organico"
+          "default": "&nemu_source=lancamento_volumizer_experts&nemu_adset=organico"
+        }
+      },
+      "E-mail": {
+        "id": 8986,
+        "params": {
+          "default": "&nemu_source=lancamento_volumizer_email&nemu_adset=organico"
         }
       }
     },
