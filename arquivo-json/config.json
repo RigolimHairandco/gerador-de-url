@@ -102,6 +102,12 @@
         "params": {
           "default": "&nemu_source=email-rigolim&nemu_adset=organico  "
         }
+      },
+      "whatsapp flutuante - Pamylla": {
+        "id": 9108,
+        "params": {
+          "default": "&nemu_source=whatsapp-flutuante-pamylla&nemu_adset=whatsapp-site"
+        }
       }
     },
     "leticia": {
