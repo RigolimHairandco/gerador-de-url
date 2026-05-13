@@ -97,16 +97,40 @@
           "default": "&nemu_source=whatsapp-rigolim&nemu_adset=disparo-whatsapp"
         }
       },
+      "whatsapp flutuante - Pamylla": {
+        "id": 9108,
+        "params": {
+          "default": "&nemu_source=whatsapp-flutuante-pamylla&nemu_adset=whatsapp-site"
+        }
+      },
       "e-mail ": {
         "id": 8988,
         "params": {
           "default": "&nemu_source=email-rigolim&nemu_adset=organico  "
         }
       },
-      "whatsapp flutuante - Pamylla": {
-        "id": 9108,
+      "e-mail - Carrinho Abandonado": {
+        "id": 9220,
         "params": {
-          "default": "&nemu_source=whatsapp-flutuante-pamylla&nemu_adset=whatsapp-site"
+          "default": "&nemu_source=email-rigolim-carrinho-abandonado&nemu_adset=organico  "
+        }
+      },
+      "e-mail - Aniversário": {
+        "id": 9222,
+        "params": {
+          "default": "&nemu_source=email-rigolim-aniversario&nemu_adset=organico  "
+        }
+      },
+      "e-mail - Confirmação de Compra": {
+        "id": 9224,
+        "params": {
+          "default": "&nemu_source=email-rigolim-confirmacao-de-compra&nemu_adset=organico  "
+        }
+      },
+      "e-mail - Novos Cadastros ": {
+        "id": 9226,
+        "params": {
+          "default": "&nemu_source=email-rigolim-novos-cadastros&nemu_adset=organico  "
         }
       }
     },
