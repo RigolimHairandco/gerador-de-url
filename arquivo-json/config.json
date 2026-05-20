@@ -25,6 +25,12 @@
           "default": "&nemu_source=link_dm_instagram_rhc&nemu_adset=organico"
         }
       },
+      "Instagram - Feed": {
+        "id": 9322,
+        "params": {
+          "default": "&nemu_source=link_feed_instagram_rhc&nemu_adset=organico"
+        }
+      },
       "facebook": {
         "id": 7460,
         "params": {
