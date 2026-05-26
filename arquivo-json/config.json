@@ -195,10 +195,16 @@
           "default": "&nemu_source=linkedin_lr&nemu_adset=organico"
         }
       },
-      "grupo-vip": {
+      "grupo vip": {
         "id": 7564,
         "params": {
           "default": "&nemu_source=grupo-vip_leticia&nemu_adset=organico"
+        }
+      },
+      "grupo vip mrp ": {
+        "id": 9412,
+        "params": {
+          "default": "&nemu_source=grupo-vip_leticia_mrp&nemu_adset=organico"
         }
       },
       "whatsapp": {
