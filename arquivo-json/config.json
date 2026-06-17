@@ -138,6 +138,24 @@
         "params": {
           "default": "&nemu_source=email-rigolim-novos-cadastros&nemu_adset=organico  "
         }
+      },
+      "Zoppy - CRM -  Email ": {
+        "id": 9654,
+        "params": {
+          "default": "&nemu_source=email_zoppy&nemu_adset=crm_zoppy&utm_medium=email&utm_source=crm_zoppy&utm_campaing="
+        }
+      },
+      "Zoppy - CRM -  WhatsApp": {
+        "id": 9656,
+        "params": {
+          "default": "&nemu_source=whatsapp_zoppy&nemu_adset=crm_zoppy&utm_medium=whatsapp&utm_source=crm_zoppy&utm_campaing="
+        }
+      },
+      "Zoppy - CRM -  SMS": {
+        "id": 9658,
+        "params": {
+          "default": "&nemu_source=sms_zoppy&nemu_adset=crm_zoppy&utm_medium=sms&utm_source=sms_zoppy&utm_campaing="
+        }
       }
     },
     "leticia": {
